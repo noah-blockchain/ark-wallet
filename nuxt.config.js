@@ -6,7 +6,6 @@ const envConfig = dotenv.config();
 const envConfigParsed = envConfig.error ? {} : envConfig.parsed;
 
 import langEn from './lang/en';
-import langRu from './lang/ru';
 import {BASE_TITLE, BASE_DESCRIPTION, I18N_ROUTE_NAME_SEPARATOR, LANGUAGE_COOKIE_KEY} from "./assets/variables";
 
 const NUXT_LOADING_INLINE_SCRIPT_SHA = process.env.NODE_ENV === 'production' ? 'tempUn1btibnrWwQxEk37lMGV1Nf8FO/GXxNhLEsPdg=' : 'boxyvYX4ButGhwNqfdpXtx/7RJdIvBO4KMxG+v2zKFo=';
@@ -113,12 +112,7 @@ export default {
                     code: 'en',
                     iso: 'en',
                     name: 'English',
-                },
-                {
-                    code: 'ru',
-                    iso: 'ru',
-                    name: 'Russian',
-                },
+                }
             ],
             defaultLocale: 'en',
             routesNameSeparator: I18N_ROUTE_NAME_SEPARATOR,
@@ -127,7 +121,6 @@ export default {
             vueI18n: {
                 fallbackLocale: 'en',
                 messages: {
-                    ru: langRu,
                     en: langEn,
                 },
             },

@@ -81,7 +81,6 @@
                             <img class="" src="/img/icon-auth-logout.svg" width="40" height="40" alt="Logout">
                         </button>
                     </div>
-                    <Language class="header__control-language"/>
                     <button class="header__offcanvas-button u-semantic-button u-hidden-medium-up" :class="{'is-active': isMenuActive}" @click="toggleMenu">
                         <span class="header__offcanvas-icon-wrap">
                             <span class="header__offcanvas-icon">Menu</span>
