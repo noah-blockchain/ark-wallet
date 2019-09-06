@@ -62,7 +62,10 @@
 
 // common
 .main-wrap {display: flex; flex-direction: column; min-height: 100vh; position: relative;}
-.main-content {width: 100%; flex-grow: 2;}
+.main-content {
+    width: 100%;
+    flex-grow: 2;
+}
 .main-content--grid {}
 .main-content__aside {position: absolute; z-index: 2; /* higher than input buttons */ top: @header-height; min-height: calc(100% - @header-height); overflow: auto; background: #fff;}
 .main-content__aside-section {padding-top: 24px; padding-bottom: 24px;}
@@ -123,7 +126,12 @@
 
 
 @header-height: 64px;
-.header {box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: #2c2c2c; color: #fff; width: 100%;}
+.header {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+
+}
 .header__container {display: flex; justify-content: space-between; align-items: center; height: @header-height;}
 .header__logo {display: flex; align-items: center;}
 .header__logo-image {margin-right: 20px; margin-left: 2px; font-size: 0;}
@@ -170,10 +178,23 @@
 
 
 // footer
-.footer {background: #3c3c3c; color: #fff; padding: 34px 0; width: 100%;}
-.footer__container {display: flex; justify-content: center; flex-wrap: wrap;}
+
+.footer {
+    background: url(../img/footer-bg.svg)
+    no-repeat 50% 0, linear-gradient(87.65deg, #062959 40.4%, #89AFE2 139.16%); color: #fff;
+    background-size: contain;
+    padding: 34px 0;
+    width: 100%;
+}
+.footer__container {
+    display: flex; justify-content: center; flex-wrap: wrap;
+}
 .footer__logo-link {}
-.footer__logo {display: block; margin: -4px 0 20px;}
+.footer__logo {
+    display: block;
+    width: 286px;
+    height: 66px;
+}
 .footer__menu {width: 100%; text-align: center;}
 .footer__menu-item {
     font-size: 14px; font-weight: 700; display: inline-block;
@@ -189,7 +210,16 @@
 
 
 
-.auth {background: url(../img/index-bg.svg) no-repeat 50% 0, linear-gradient(to bottom, #161616, #313131); color: #fff; background-blend-mode: soft-light;}
+.auth {
+    height: 360px;
+    background-size: contain;
+    background-position: center;
+    padding-top: 120px;
+    background: url(../img/index-bg.svg)
+
+no-repeat 100% 100%, linear-gradient(87.65deg, #062959 40.4%, #89AFE2 139.16%);; color: #fff;
+
+}
 
 
 
