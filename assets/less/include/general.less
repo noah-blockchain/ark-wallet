@@ -142,7 +142,14 @@ dd {overflow-wrap: break-word; margin: 0;}
 
 // button
 .button {
-    display: inline-flex; align-items: center; justify-content: center; padding: 10px 26px; font-size: 16px; line-height: 18px; font-weight: 700; font-family: @heading-font-family; color: @c-black; text-align: center; border: 2px solid transparent; text-decoration: none; transition: 0.1s; position: relative; overflow: hidden;
+    display: inline-flex; align-items: center;
+    justify-content: center; padding: 10px 26px;
+    font-size: 16px; line-height: 18px; font-weight: 700;
+    font-family: @heading-font-family; color: @c-black;
+    text-align: center; border: 2px solid transparent;
+    text-decoration: none; transition: 0.1s;
+    position: relative; overflow: hidden;
+    border-radius: 21px;
     &:hover, &:focus {box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
     &:active {box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
     &[disabled], &.is-disabled {
@@ -152,9 +159,12 @@ dd {overflow-wrap: break-word; margin: 0;}
     &.is-loading .button__content {color: transparent;}
 }
 .button--main {
-    color: #fff; background: @c-main;
-    &:hover, &:focus {background: tint(@c-main, 10%);}
-    &:active {background: shade(@c-main, 10%);}
+    color: #fff;
+    background:@main-gradient;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    &:hover, &:focus {background: @main-gradient-hover}
+    &:active {background: @main-gradient-active}
 }
 .button--white {
     color: @c-main; background: #fff;

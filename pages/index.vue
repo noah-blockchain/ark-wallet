@@ -80,18 +80,12 @@
                         <div class="panel">
                             <div class="panel__header">
                                 <h1 class="panel__header-title">
-                                    <img class="panel__header-title-icon" src="/img/icon-auth-sign-in.svg" alt="" role="presentation" width="40" height="40">
-                                    {{ $td('Sign in with username', 'index.auth-sign-in-title') }}
+                                    <img class="panel__header-title-icon" src="/img/icon-auth-sign-in.svg" alt=""
+                                         role="presentation" width="32" height="32">
+                                    {{ $td('SIGN IN WITH SEED PHRASE', 'index.auth-sign-in-title') }}
                                 </h1>
                             </div>
-                            <AuthSignInForm/>
-                            <div class="panel__header">
-                                <h1 class="panel__header-title">
-                                    <img class="panel__header-title-icon" src="/img/icon-auth-register.svg" alt="" role="presentation" width="40" height="40">
-                                    {{ $td('Register', 'index.auth-sign-up-title') }}
-                                </h1>
-                            </div>
-                            <AuthRegisterForm/>
+                            <AuthAdvancedForm :isAuthAddress="true"/>
                         </div>
                     </div>
 
@@ -99,15 +93,8 @@
                         <div class="panel">
                             <div class="panel__header">
                                 <h1 class="panel__header-title">
-                                    <img class="panel__header-title-icon" src="/img/icon-auth-sign-in.svg" alt="" role="presentation" width="40" height="40">
-                                    {{ $td('Sign in with seed phrase', 'index.auth-sign-in-seed-title') }}
-                                </h1>
-                            </div>
-                            <AuthAdvancedForm :isAuthAddress="true"/>
-                            <div class="panel__header">
-                                <h1 class="panel__header-title">
-                                    <img class="panel__header-title-icon" src="/img/icon-auth-register.svg" alt="" role="presentation" width="40" height="40">
-                                    {{ $td('Register with seed phrase', 'index.auth-sign-up-seed-title') }}
+                                    <img class="panel__header-title-icon" src="/img/icon-auth-register.svg" alt="" role="presentation" width="32" height="32">
+                                    {{ $td('Create wallet', 'index.auth-sign-up-seed-title') }}
                                 </h1>
                             </div>
                             <AuthAdvancedGenerate/>
@@ -115,22 +102,6 @@
                                 <a class="link--default" href="https://github.com/noah-blockchain/noah-console-web/releases" target="_blank">{{ $td('Generate locally (Github)', 'index.auth-sign-up-seed-offline') }}</a>
                             </div>
                         </div>
-
-                        <!--
-                        <div class="panel">
-                            <form class="panel__section">
-                                <div class="u-grid u-grid&#45;&#45;small u-grid&#45;&#45;vertical-margin&#45;&#45;small">
-                                    <div class="u-cell">
-                                        <button class="button button&#45;&#45;main button&#45;&#45;full button&#45;&#45;trezor">
-                                            <img class="button&#45;&#45;trezor__icon" src="/img/icon-auth-trezor.svg" alt="" role="presentation">
-                                            Sign In with
-                                            <img class="button&#45;&#45;trezor__logo" src="/img/icon-auth-trezor-logo.svg" alt="Trezor">
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        -->
                     </div>
                 </div>
             </div>
@@ -202,28 +173,6 @@
                         <strong class="features__title">{{ $td('Support', 'index.features-support-title') }}</strong>
                         <p>{{ $td('Coping with all the razzle-dazzle technical features can sometimes be challenging. But don’t worry, our customer support team will always be there for you.', 'index.features-support-description') }}</p>
                     </div>
-                </li>
-            </ul>
-            <hr class="hr--margin-large">
-            <p>{{ $td('Keep in mind that even without a Noah account, you still can use the following services and software:', 'index.links-description') }}</p>
-            <ul class="services__list--horizontal no-list u-grid u-grid--vertical-margin--small">
-                <li class="services__item u-cell u-cell--1-2 u-cell--small--1-3">
-                    <a class="services__link link--hover" :href="`https://status.minter.network${isTestnet ? '/testnet' : ''}`" target="_blank">{{ $td('Status', 'index.links-status') }}</a>
-                </li>
-                <li class="services__item u-cell u-cell--1-2 u-cell--small--1-3 services__item--next-row">
-                    <a class="services__link link--hover" :href="`https://${isTestnet ? 'testnet.': ''}explorer.minter.network`" target="_blank">{{ $td('Explorer', 'index.links-explorer') }}</a>
-                </li>
-                <li class="services__item u-cell u-cell--1-2 u-cell--small--1-3">
-                    <a class="services__link link--hover" href="https://noah-blockchain.github.io/noah-go-node-docs/#tag/Node-API" target="_blank" rel="noopener">API</a>
-                </li>
-                <li class="services__item u-cell u-cell--1-2 u-cell--small--1-3 services__item--next-row">
-                    <a class="services__link link--hover" href="https://noah-blockchain.github.io/noah-go-node-docs/#section/Noah-SDKs" target="_blank" rel="noopener">SDK</a>
-                </li>
-                <li class="services__item u-cell u-cell--1-2 u-cell--small--1-3">
-                    <a class="services__link link--hover" href="https://calculator.beta.minter.network" target="_blank">{{ $td('Calculator', 'index.links-calculator') }}</a>
-                </li>
-                <li class="services__item u-cell u-cell--1-2 u-cell--small--1-3 services__item--next-row">
-                    <a class="services__link link--hover" href="https://help.minter.network" target="_blank">{{ $td('Help/FAQ', 'index.links-help') }}</a>
                 </li>
             </ul>
         </div>

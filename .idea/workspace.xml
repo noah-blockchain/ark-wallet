@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b929445-62ea-4257-beb4-d540c2d2f534" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web-console.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-auth-register.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-auth-register.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-auth-sign-in.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-auth-sign-in.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-account.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-account.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-check.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-coin-creation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-coin-creation.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-coin-transfer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-coin-transfer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-mining.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-mining.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-node-management.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-node-management.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-pco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-pco.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-support.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-support.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-vote.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-vote.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/index-bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/index-bg.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/less/include/general.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/less/include/general.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/less/include/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/less/include/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/less/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,47 +32,57 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layouts/default.vue">
+        <entry file="file://$PROJECT_DIR$/pages/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1521">
-              <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-              <folding>
-                <element signature="e#13#69#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-69">
+              <caret line="149" column="74" selection-start-line="149" selection-start-column="71" selection-end-line="149" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="82" column="107" selection-start-line="82" selection-start-column="107" selection-end-line="82" selection-end-column="107" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-account.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-support.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-mining-automation.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-pco.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-check.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-coin-creation.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-coin-transfer.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-mining.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-915">
-              <caret line="153" column="5" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/less/style.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="215" column="32" lean-forward="true" selection-start-line="215" selection-start-column="32" selection-end-line="215" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layouts/nonAuth.vue">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-node-management.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -76,8 +94,17 @@
       <find>header</find>
       <find>bg</find>
       <find>.header</find>
-      <find>.auth</find>
       <find>panel__header</find>
+      <find>.button</find>
+      <find>.button--main</find>
+      <find>head</find>
+      <find>@c-main</find>
+      <find>.auth</find>
+      <find>#C4C4C4</find>
+      <find>Keep in mind</find>
+      <find>white</find>
+      <find>pco</find>
+      <find>dele</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,12 +115,27 @@
       <list>
         <option value="$PROJECT_DIR$/assets/img/noah-logo-circle.svg" />
         <option value="$PROJECT_DIR$/assets/img/backgorund-main.svg" />
-        <option value="$PROJECT_DIR$/assets/img/index-bg.svg" />
         <option value="$PROJECT_DIR$/assets/img/noah-logo-white.svg" />
         <option value="$PROJECT_DIR$/assets/img/footer-bg.svg" />
-        <option value="$PROJECT_DIR$/assets/less/style.less" />
-        <option value="$PROJECT_DIR$/pages/index.vue" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/assets/less/include/general.less" />
+        <option value="$PROJECT_DIR$/assets/less/include/variables.less" />
+        <option value="$PROJECT_DIR$/assets/less/style.less" />
+        <option value="$PROJECT_DIR$/nuxt.config.js" />
+        <option value="$USER_HOME$/Downloads/enter.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-auth-sign-in.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-auth-register.svg" />
+        <option value="$PROJECT_DIR$/pages/index.vue" />
+        <option value="$PROJECT_DIR$/assets/img/index-bg.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-feature-coin-transfer.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-feature-mining.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-feature-coin-creation.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-feature-check.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-feature-vote.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-feature-pco.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-feature-account.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-feature-support.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-feature-node-management.svg" />
       </list>
     </option>
   </component>
@@ -110,9 +152,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1425" />
+    <option name="width" value="1440" />
     <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -136,7 +178,31 @@
             <path>
               <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="less" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="less" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -178,15 +244,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567726984409</updated>
-      <workItem from="1567726987383" duration="3484000" />
+      <workItem from="1567726987383" duration="8700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3484000" />
+    <option name="totallyTimeSpent" value="8700000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="789" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="789" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
@@ -244,24 +310,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#112#135#0" expanded="true" />
-            <element signature="e#267#298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/backgorund-main.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/noah-logo-circle.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/index-bg.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/footer-bg.svg">
@@ -269,11 +321,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/noah-logo-white.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/less/include/general.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/less/include/layout.less">
       <provider selected="true" editor-type-id="text-editor" />
@@ -288,37 +335,18 @@
         <state relative-caret-position="-28" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/less/include/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/layouts/default.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1521">
-          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
           <folding>
             <element signature="e#13#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/less/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="215" column="32" lean-forward="true" selection-start-line="215" selection-start-column="32" selection-end-line="215" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/layouts/nonAuth.vue">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="82" column="107" selection-start-line="82" selection-start-column="107" selection-end-line="82" selection-end-column="107" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -326,6 +354,115 @@
           <caret line="153" column="5" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/persistedState.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/_ionicons_svg_md-log-in.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/less/include/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="31" column="7" selection-start-line="31" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/less/include/general.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="166" column="47" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="265" column="34" selection-start-line="265" selection-start-column="34" selection-end-line="265" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="57" column="81" lean-forward="true" selection-start-line="57" selection-start-column="81" selection-end-line="57" selection-end-column="81" />
+          <folding>
+            <element signature="e#112#135#0" expanded="true" />
+            <element signature="e#267#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/enter.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-auth-sign-in.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/AuthAdvancedForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-auth-register.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/social-share-masternode.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/social-share-masternode-ru.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/index-bg.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/social-share-wallet.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/social-share-wallet-ru.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/data-management-interface-symbol-with-gears-and-binary-code-numbers.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-vote.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-pco.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="149" column="74" selection-start-line="149" selection-start-column="71" selection-end-line="149" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-account.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-support.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-mining-automation.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-check.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-coin-creation.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-coin-transfer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-mining.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-node-management.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

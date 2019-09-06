@@ -96,7 +96,6 @@
 }
 .panel__section, .panel__header {
     padding: 20px;
-    &+& {border-top: 1px solid @c-border;}
 }
 .panel-title() {font: inherit; font-weight: 700; text-transform: uppercase; margin: 0;}
 .panel__header {padding-top: 18px; padding-bottom: 18px; /*display: flex; justify-content: space-between; align-items: center;*/}
@@ -211,7 +210,7 @@
 
 
 .auth {
-    height: 360px;
+    overflow: hidden;
     background-size: contain;
     background-position: center;
     padding-top: 120px;
@@ -269,4 +268,4 @@ no-repeat 100% 100%, linear-gradient(87.65deg, #062959 40.4%, #89AFE2 139.16%);;
 
 .reinvest__textarea {width: 100%; padding: 4px 8px; border: 1px solid @c-border; border-radius: 10px;}
 .reinvest__upload-textarea {max-height: 200px;}
-
+.index-icon {color: @c-main; font-size: 40px}
