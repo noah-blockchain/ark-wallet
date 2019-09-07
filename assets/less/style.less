@@ -71,7 +71,9 @@
     margin-top: 64px;
     position: absolute; z-index: 2; /* higher than input buttons */ top: @header-height; min-height: calc(100% - @header-height); overflow: auto; background: #fff;}
 .main-content__aside-section {padding-top: 24px; padding-bottom: 24px;}
-.main-content__main {}
+.main-content__main {
+    margin-top: 64px;
+}
 @media (min-width: @breakpoint-medium-up) {
     .main-content--grid {display: flex;}
     .main-content__aside {width: 256px; flex-shrink: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: static; overflow: visible;}
@@ -137,12 +139,16 @@
 .header__logo-image {margin-right: 20px; margin-left: 2px; font-size: 0;}
 .header__logo-text {font-size: 20px; line-height: 1.25; white-space: nowrap;}
 .header__user {display: flex; align-items: center; margin-right: 16px;}
-.header__user-logout {font-size: 0; margin-left: 16px;}
+.header__user-logout {font-size: 0; margin-left: 16px; margin-right: 16px;}
 .header__controls {display: flex; align-items: center;}
 .header__control-language {}
 .header__language-button {font-size: 0; display: block;}
 .header__language-text {margin-right: 16px;}
-
+.header__container.u-container.u-container--large {
+    background-size: cover;
+    background-position: center;
+    background: url(../img/bg-header-main.svg)
+}
 
 @media (min-width: @breakpoint-mini-up) {
     .header__logo-text {font-size: 24px;}
@@ -214,7 +220,7 @@
 
 .auth {
     overflow: hidden;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     padding-top: 120px;
     background: url(../img/index-bg.svg)

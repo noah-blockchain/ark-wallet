@@ -11,8 +11,9 @@
                     <div class="header__user u-hidden-medium-down">
                         <nuxt-link class="button button--ghost-white" :to="preferredPath('account')" v-if="username">{{ username }}</nuxt-link>
                         <button class="header__user-logout u-semantic-button" data-test-id="headerLogoutButton" @click="logout">
-                            <img class="" src="/img/icon-auth-logout.svg" width="40" height="40" alt="Logout">
+                            <img class="" src="/img/icon-auth-logout.svg" width="28" height="28" alt="Logout">
                         </button>
+                        <Language/>
                     </div>
                     <button class="header__offcanvas-button u-semantic-button u-hidden-medium-up" :class="{'is-active': isMenuActive}" @click="toggleMenu">
                         <span class="header__offcanvas-icon-wrap">
@@ -77,6 +78,7 @@
                                     <img class="menu__icon" src="/img/icon-feature-account.svg" alt="" role="presentation">
                                     <span class="menu__user-name">{{ $store.state.user.username || $td('Account', 'common.page-account') }}</span>
                                 </nuxt-link>
+
                                 <button class="menu__user-logout u-semantic-button u-hidden-medium-up" data-test-id="headerLogoutButton" @click="logout">
                                     <img class="" src="/img/icon-auth-logout-menu.svg" alt="Logout">
                                 </button>

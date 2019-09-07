@@ -43,14 +43,14 @@
 <template>
     <div class="mdc-menu-surface--anchor">
         <button class="header__language-button u-semantic-button" @click="mdcMenu.open = true">
-            <img :src="`/img/icon-flag-${currentLocale.code}.png`" :srcset="`/img/icon-flag-${currentLocale.code}@2x.png 2x`" :alt="currentLocale.name" width="24" height="24">
+            <img :src="`/img/icon-flag-${currentLocale.code}.png`" :srcset="`/img/icon-flag-${currentLocale.code}@2x.png 2x`" :alt="currentLocale.name" width="28" height="28">
         </button>
         <div class="mdc-menu mdc-menu-surface" tabindex="-1">
             <div class="mdc-menu__items mdc-list" role="menu" aria-hidden="true">
                 <!-- current locale -->
                 <nuxt-link class="mdc-list-item" :to="switchLocalePath(currentLocale.code)">
                     <span class="mdc-list-item__text header__language-text">{{ currentLocale.name }}</span>
-                    <img class="mdc-list-item__meta" :src="`/img/icon-flag-${currentLocale.code}.png`" :srcset="`/img/icon-flag-${currentLocale.code}@2x.png 2x`" alt="" width="24" height="24" role="presentation">
+                    <img class="mdc-list-item__meta" :src="`/img/icon-flag-${currentLocale.code}.png`" :srcset="`/img/icon-flag-${currentLocale.code}@2x.png 2x`" alt="" width="28" height="28" role="presentation">
                 </nuxt-link>
                 <!--list of other locales -->
                 <nuxt-link class="mdc-list-item"
