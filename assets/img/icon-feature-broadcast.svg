@@ -1,6 +1,16 @@
-<svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="16" cy="11" r="10" fill="white" stroke="#B38340" stroke-width="2"/>
-    <circle cx="16" cy="11" r="6" fill="white" stroke="#B38340" stroke-width="2"/>
-    <circle cx="16" cy="11" r="2" fill="#B38340"/>
-    <path d="M16 14L29.8564 23H2.14359L16 14Z" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="clip-custom_1">
+            <rect width="32" height="32"/>
+        </clipPath>
+    </defs>
+    <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
+        <rect width="32" height="32" fill="#fff"/>
+        <g id="icon-feature-broadcast" transform="translate(-5.614 1.804)">
+            <circle id="Ellipse_1" data-name="Ellipse 1" cx="14.199" cy="14.199" r="14.199" transform="translate(7.619 1)" fill="#fff" stroke="#b38340" stroke-width="2.4"/>
+            <circle id="Ellipse_2" data-name="Ellipse 2" cx="8.519" cy="8.519" r="8.519" transform="translate(13.299 6.68)" fill="#fff" stroke="#b38340" stroke-width="2.4"/>
+            <circle id="Ellipse_3" data-name="Ellipse 3" cx="2.84" cy="2.84" r="2.84" transform="translate(18.978 12.359)" fill="#b38340"/>
+            <path id="Path_1" data-name="Path 1" d="M21.818,14,41.493,26.779H2.144Z" transform="translate(0 5.459)" fill="#fff"/>
+        </g>
+    </g>
 </svg>

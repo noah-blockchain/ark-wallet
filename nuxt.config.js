@@ -74,10 +74,7 @@ export default {
         link: [
             { rel: 'icon', href: '/favicon.png' },
             { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
-        ],
-        script: [
-            { src: 'https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js' },
-        ],
+        ]
     },
     css: [
         './static/css/style.min.css',

@@ -60,6 +60,7 @@ export default {
         // profile address fetched in the middleware
         return getBalance(getters.address)
             .then((balance) => {
+                console.log("BALANCE", balance);
                 commit('SET_BALANCE', balance);
                 return balance;
             });
