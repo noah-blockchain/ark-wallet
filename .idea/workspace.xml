@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b929445-62ea-4257-beb4-d540c2d2f534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-account.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-account.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-broadcast.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-feature-broadcast.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-qr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-qr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-wallet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icon-wallet.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/less/include/utils.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/less/include/utils.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/less/include/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/less/include/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-flag-ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icon-flag-ru@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-account-ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-account.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-checks-ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-checks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-coiner-ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-coiner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-convert-ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-convert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-delegation-ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-delegation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-masternode-ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-masternode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-wallet-ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/social-share-wallet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/social-share-ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/social-share.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,13 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/less/include/variables.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
               <caret line="36" column="18" selection-start-line="36" selection-end-line="36" selection-end-column="18" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-flag-en.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/apple-touch-icon.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -146,25 +162,17 @@
             <path>
               <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-console" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-console" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-console" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-console" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,12 +239,12 @@
       <updated>1567726984409</updated>
       <workItem from="1567726987383" duration="9384000" />
       <workItem from="1567848457314" duration="5207000" />
-      <workItem from="1567943675876" duration="4378000" />
+      <workItem from="1567943675876" duration="4629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18969000" />
+    <option name="totallyTimeSpent" value="19220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1440" height="789" extended-state="0" />
@@ -269,20 +277,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/store/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/error.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2202">
@@ -294,15 +288,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-mining-automation.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-mining.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-node-management.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-pco.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-support.svg">
@@ -353,18 +338,6 @@
     <entry file="file://$PROJECT_DIR$/assets/img/icon-dropdown.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-flag-en.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-flag-en@2x.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-flag-ru.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-flag-ru@2x.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/noah-logo-white.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -383,9 +356,6 @@
     <entry file="file://$PROJECT_DIR$/assets/img/social-share-wallet-ru.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/social-share-account.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-account.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -399,15 +369,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/apple-touch-icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/social-share.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/social-share-ru.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/nuxt.config.js">
@@ -447,6 +408,45 @@
           <caret line="36" column="18" selection-start-line="36" selection-end-line="36" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-flag-ru.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-flag-ru@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/social-share-account.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-coin-transfer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-convert.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-mining.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-node-management.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-flag-en@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-pco.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/social-share-ru.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/social-share.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-flag-en.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/apple-touch-icon.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
