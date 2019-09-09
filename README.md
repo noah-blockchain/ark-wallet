@@ -29,7 +29,7 @@ docker-compose build && docker-compose up -d
 ```
 
 ## Configurate node connection
-You can configure the node configuration in the file
+You can configure the node in the file
 ```
 /app/.env.example
 ```
