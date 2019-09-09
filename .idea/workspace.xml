@@ -2,174 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b929445-62ea-4257-beb4-d540c2d2f534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/app/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web-console.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/app/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/accounts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/auto-delegation.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auto-delegation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/explorer.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/explorer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/gate.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/gate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mns.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/mns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fee.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/fee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/get-title.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/get-title.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/bg-header-main.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/bg-header-main.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/footer-bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/footer-bg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-auth-logout-menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-auth-logout-menu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-auth-logout.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-auth-logout.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-auth-register.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-auth-register.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-auth-sign-in.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-auth-sign-in.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-auth-trezor-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-auth-trezor-logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-auth-trezor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-auth-trezor.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-copy-black.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-copy-black.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-copy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-copy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-delegate.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-delegate.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-dropdown.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-dropdown.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-account.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-account.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-broadcast.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-broadcast.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-check.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-coin-creation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-coin-creation.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-coin-transfer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-coin-transfer.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-convert.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-convert.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-mining-automation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-mining-automation.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-mining.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-mining.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-node-management.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-node-management.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-pco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-pco.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-support.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-support.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-feature-vote.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-feature-vote.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-flag-en.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-flag-en.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-flag-en@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-flag-en@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-qr-black.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-qr-black.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-qr-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-qr-white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-qr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-qr.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-send.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-send.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-unbond.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-unbond.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icon-wallet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/icon-wallet.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/index-bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/index-bg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/noah-logo-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/noah-logo-circle.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/noah-logo-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/img/noah-logo-white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/less/include/general.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/less/include/general.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/less/include/layout.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/less/include/layout.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/less/include/modal.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/less/include/modal.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/less/include/utils.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/less/include/utils.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/less/include/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/less/include/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/less/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/server-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/server-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/v-check-empty.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/v-check-empty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/variables.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/variables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AuthAdvancedForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AuthAdvancedForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AuthAdvancedGenerate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AuthAdvancedGenerate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AuthRegisterForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AuthRegisterForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AuthSignInForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AuthSignInForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BroadcastNonceForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BroadcastNonceForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BroadcastSendForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BroadcastSendForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CheckIssueForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CheckIssueForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CheckRedeemForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CheckRedeemForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CoinBuyForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CoinBuyForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CoinCreateForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CoinCreateForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CoinList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CoinList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CoinSellAllForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CoinSellAllForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CoinSellForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CoinSellForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CoinSendForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CoinSendForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TransactionLatestList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TransactionLatestList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ValidatorDeclareCandidacyForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ValidatorDeclareCandidacyForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ValidatorDelegateForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ValidatorDelegateForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ValidatorEditCandidateForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ValidatorEditCandidateForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ValidatorReinvestForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ValidatorReinvestForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ValidatorReinvestStartForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ValidatorReinvestStartForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ValidatorSetCandidateOnOffForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ValidatorSetCandidateOnOffForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ValidatorUnbondForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ValidatorUnbondForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/BaseDataList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/BaseDataList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/ButtonCopy.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/ButtonCopy.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/ButtonCopyIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/ButtonCopyIcon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/FieldCoinList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/FieldCoinList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/FieldDomain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/FieldDomain.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/FieldQr.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/FieldQr.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/FieldUseMax.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/FieldUseMax.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/InputMaskedAmount.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/InputMaskedAmount.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/InputMaskedInteger.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/InputMaskedInteger.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/InputMaskedName.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/InputMaskedName.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/InputUppercase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/InputUppercase.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/Loader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/Loader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/Modal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/QrScan.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/QrScan.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/Snackbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/Snackbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/TableLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/TableLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/config/dist.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/phing.phar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest-babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/jest-babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/jest.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/layouts/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/layouts/_footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_language.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/layouts/_language.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/error.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/layouts/error.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/nonAuth.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/layouts/nonAuth.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/balance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/account/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/account/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/broadcast/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/broadcast/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/checks/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/checks/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/coiner/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/coiner/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/convert/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/convert/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dao/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/dao/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/delegation/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/delegation/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/masternode/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/masternode/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pco/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/pco/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/support/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/support/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/wallet/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/wallet/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/plugins/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/classlist-svg-polyfill.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/plugins/classlist-svg-polyfill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/click-blur.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/plugins/click-blur.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/online.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/plugins/online.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/persistedState.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/plugins/persistedState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/apple-touch-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/ubuntu-v11-cyrillic_latin-700.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/ubuntu-v11-cyrillic_latin-700.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/ubuntu-v11-cyrillic_latin-700.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/ubuntu-v11-cyrillic_latin-700.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/ubuntu-v11-cyrillic_latin-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/ubuntu-v11-cyrillic_latin-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/ubuntu-v11-cyrillic_latin-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/ubuntu-v11-cyrillic_latin-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/getters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/jest-environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/jest-environment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/jest-setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/jest-setup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/jest-teardown.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/jest-teardown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/jest-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/jest-utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/pages/convert.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/pages/convert.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/pages/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/pages/index.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/pages/wallet.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/pages/wallet.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/variables.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/variables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -213,19 +54,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/index.vue">
+        <entry file="file://$PROJECT_DIR$/app/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="111" column="27" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="27" />
+            <state relative-caret-position="115">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/package.json">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="281">
+              <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -325,7 +166,6 @@
         <option value="$PROJECT_DIR$/assets/img/backgorund-main.svg" />
         <option value="$PROJECT_DIR$/assets/img/noah-logo-white.svg" />
         <option value="$PROJECT_DIR$/assets/img/footer-bg.svg" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/assets/less/include/general.less" />
         <option value="$USER_HOME$/Downloads/enter.svg" />
         <option value="$PROJECT_DIR$/assets/img/icon-auth-sign-in.svg" />
@@ -372,6 +212,7 @@
         <option value="$PROJECT_DIR$/app/Dockerfile" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/package.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -393,11 +234,6 @@
             <path>
               <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-console" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-console" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
@@ -480,15 +316,16 @@
       <workItem from="1567726987383" duration="9384000" />
       <workItem from="1567848457314" duration="5207000" />
       <workItem from="1567943675876" duration="4778000" />
-      <workItem from="1568035351832" duration="9233000" />
+      <workItem from="1568035351832" duration="9609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28602000" />
+    <option name="totallyTimeSpent" value="28978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="789" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="789" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989059" visible="true" weight="0.30472103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -517,7 +354,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/img/social-share-account.png" />
     <entry file="file://$PROJECT_DIR$/app/assets/img/icon-feature-coin-transfer.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -742,6 +578,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
         </state>
       </provider>
     </entry>
