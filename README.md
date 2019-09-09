@@ -1,45 +1,35 @@
-# Noah Console Website
+# Web-console Noah Docker
 
-[![Build Status](https://img.shields.io/travis/MinterTeam/minter-console-web.svg?style=flat-square)](https://travis-ci.org/MinterTeam/minter-console-web)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/MinterTeam/minter-console-web/blob/master/LICENSE)
-
-This is the repository containing the code for the official Noah Console website [console.minter.network](https://console.minter.network)
-
-## Install
-
-- ensure latest stable Node.js and NPM are installed
-- clone the repo
-- copy .env.example `cp .env.example .env`
-- set correct .env variables
-- install node_modules `npm ci`
-- build `npm run production`
-- now you have static assets in the `./dist/` folder, you have to distribute them with some web server like Nginx or run `npm run start`
-
-
-## Deployment script
-
-Build in Nuxt SPA mode
+## Getting you instance ready for Docker
+Run the following commands to install Docker and Docker Compose
+On Ubuntu
 ```
-npm ci && npm run production
+sudo apt update
+sudo apt install -y docker.io git
+sudo usermod -a -G docker ubuntu
+sudo service docker start
+sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
-Root folder: `./dist/`
-
-
-### Nuxt build cheatsheet
-
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+or with Amazon Linux
+```
+#!/bin/bash
+sudo yum -y update
+sudo yum install -y docker git
+sudo usermod -a -G docker ec2-user
+sudo service docker start
+sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## Build and run
+Download or clone this repository. Go into the root folder of this repository, and run the following command.
+```
+docker-compose build && docker-compose up -d
+```
+
+## Configurate node connection
+You can configure the node configuration in the file
+```
+/app/.env.example
+```
