@@ -88,9 +88,6 @@
                     <hr>
                     <div class="u-container main-content__aside-section">
                         <ul class="services__list no-list u-grid u-grid--vertical-margin--small">
-                            <li class="u-cell">
-                                <a class="services__link link--hover" :href="`https://status.minter.network${isTestnet ? '/testnet' : ''}`" target="_blank">Status</a>
-                            </li>
                             <li class="u-cell services__item--next-row">
                                 <a class="services__link link--hover" :href="`https://${isTestnet ? 'testnet.': ''}explorer.minter.network`" target="_blank">Explorer</a>
                             </li>
@@ -99,9 +96,6 @@
                             </li>
                             <li class="u-cell services__item--next-row">
                                 <a class="services__link link--hover" href="https://noah-blockchain.github.io/noah-go-node-docs/#section/Noah-SDKs" target="_blank">SDK</a>
-                            </li>
-                            <li class="u-cell">
-                                <a class="services__link link--hover" href="https://calculator.beta.minter.network" target="_blank">Calculator</a>
                             </li>
                             <li class="u-cell services__item--next-row">
                                 <a class="services__link link--hover" href="https://help.minter.network" target="_blank">Help/FAQ</a>
