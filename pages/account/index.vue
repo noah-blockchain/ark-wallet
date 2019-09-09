@@ -76,9 +76,9 @@
                 <dt>{{ $td('Address:', 'account.address') }}</dt>
                 <dd class="u-icon-wrap">
                     <a class="link--default u-icon-text" :href="addressUrl" target="_blank">{{ address }}</a>
-                    <ButtonCopyIcon :copy-text="address"/>
+                    <ButtonCopyIcon class="black" :copy-text="address"/>
                     <button class="u-icon u-icon--qr--right u-semantic-button link--opacity" @click="isAddressQrModalVisible = true">
-                        <InlineSvg src="/img/icon-qr.svg" width="24" height="24"/>
+                        <InlineSvg src="/img/icon-qr-black.svg" width="24" height="24"/>
                     </button>
                 </dd>
 

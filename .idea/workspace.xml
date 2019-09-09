@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b929445-62ea-4257-beb4-d540c2d2f534" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icon-qr-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icon-qr-white.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/less/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/account/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/account/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/wallet/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/wallet/index.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,16 +29,62 @@
         <entry file="file://$PROJECT_DIR$/.env.example">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
-              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+              <caret line="22" column="26" selection-start-line="22" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layouts/default.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/wallet/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-390">
+              <caret line="104" column="62" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/layouts/default.vue">
+        <entry file="file://$PROJECT_DIR$/assets/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="89" column="97" selection-start-line="89" selection-start-column="97" selection-end-line="89" selection-end-column="97" />
+            <state relative-caret-position="292">
+              <caret line="285" column="18" selection-start-line="285" selection-start-column="18" selection-end-line="285" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-qr-white.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/icon-qr-black.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/account/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="78" column="48" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/common/ButtonCopyIcon.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -44,7 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.header</find>
       <find>panel__header</find>
       <find>.button</find>
       <find>.button--main</find>
@@ -63,7 +111,6 @@
       <find>header__language-button</find>
       <find>main-content__main</find>
       <find>.auth</find>
-      <find>address</find>
       <find>balance</find>
       <find>error</find>
       <find>components</find>
@@ -74,6 +121,8 @@
       <find>getBalance</find>
       <find>social-share-ru</find>
       <find>u-semantic-button</find>
+      <find>calcu</find>
+      <find>address</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,11 +155,9 @@
         <option value="$PROJECT_DIR$/layouts/_language.vue" />
         <option value="$PROJECT_DIR$/assets/img/icon-feature-convert.svg" />
         <option value="$PROJECT_DIR$/assets/img/index-bg.svg" />
-        <option value="$PROJECT_DIR$/assets/less/style.less" />
         <option value="$PROJECT_DIR$/assets/img/icon-feature-account.svg" />
         <option value="$PROJECT_DIR$/nuxt.config.js" />
         <option value="$PROJECT_DIR$/.eslintignore" />
-        <option value="$PROJECT_DIR$/pages/wallet/index.vue" />
         <option value="$PROJECT_DIR$/store/actions.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/assets/img/icon-qr.svg" />
@@ -120,6 +167,12 @@
         <option value="$PROJECT_DIR$/assets/less/include/utils.less" />
         <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/layouts/default.vue" />
+        <option value="$PROJECT_DIR$/components/common/ButtonCopyIcon.vue" />
+        <option value="$PROJECT_DIR$/pages/wallet/index.vue" />
+        <option value="$PROJECT_DIR$/assets/img/icon-qr-white.svg" />
+        <option value="$PROJECT_DIR$/assets/img/icon-qr-black.svg" />
+        <option value="$PROJECT_DIR$/pages/account/index.vue" />
+        <option value="$PROJECT_DIR$/assets/less/style.less" />
       </list>
     </option>
   </component>
@@ -146,7 +199,35 @@
             <path>
               <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="less" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-console" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="wallet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-console" type="b2602c69:ProjectViewProjectNode" />
@@ -218,12 +299,12 @@
       <workItem from="1567726987383" duration="9384000" />
       <workItem from="1567848457314" duration="5207000" />
       <workItem from="1567943675876" duration="4778000" />
-      <workItem from="1568035351832" duration="96000" />
+      <workItem from="1568035351832" duration="879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19465000" />
+    <option name="totallyTimeSpent" value="20248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1440" height="789" extended-state="0" />
@@ -256,18 +337,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-support.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-feature-vote.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-unbond.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/icon-send.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/bg-header-main.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -329,11 +398,6 @@
         <state relative-caret-position="-1452" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/wallet/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1509" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -389,25 +453,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/less/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.env.example">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+          <caret line="22" column="26" selection-start-line="22" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/layouts/default.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="89" column="97" selection-start-line="89" selection-start-column="97" selection-end-line="89" selection-end-column="97" />
+        <state relative-caret-position="271">
+          <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/common/ButtonCopyIcon.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-qr-white.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/icon-qr-black.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/account/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="78" column="48" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/wallet/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="104" column="62" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="285" column="18" selection-start-line="285" selection-start-column="18" selection-end-line="285" selection-end-column="18" />
         </state>
       </provider>
     </entry>
