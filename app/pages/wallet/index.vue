@@ -48,7 +48,7 @@
         },
         head() {
             const title = getTitle(this.$store.state.sectionName, this.$i18n.locale);
-            const description = this.$td(`Transact MNT and other coins issued in the Noah ${this.isTestnet ? 'test ': ''}network. Almost instantly and fee-free.`, this.isTestnet ? 'wallet.seo-description-testnet' : 'wallet.seo-description');
+            const description = this.$td(`Transact NOah and other coins issued in the Noah ${this.isTestnet ? 'test ': ''}network. Almost instantly and fee-free.`, this.isTestnet ? 'wallet.seo-description-testnet' : 'wallet.seo-description');
             const localeSuffix = this.$i18n.locale === 'en' ? '' : '-' + this.$i18n.locale;
 
             return {

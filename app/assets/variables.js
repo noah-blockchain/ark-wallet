@@ -5,7 +5,7 @@ export const BASE_TITLE_NETWORK = NETWORK === MAINNET ? '' : 'Testnet ';
 export const BASE_TITLE_END = ' — Noah';
 export const BASE_TITLE = BASE_TITLE_NETWORK + 'Console' + BASE_TITLE_END;
 export const BASE_DESCRIPTION = `Noah Console is by far the most advanced part of our project that lets you manage all your activities on our ${NETWORK === TESTNET ? 'test ': ''}network.`;
-export const COIN_NAME = NETWORK === MAINNET ? 'BIP' : 'MNT';
+export const COIN_NAME = NETWORK === MAINNET ? 'noah' : 'NOah';
 export const CHAIN_ID = NETWORK === MAINNET ? 1 : 2;
 export const ACCOUNTS_API_URL = process.env.APP_ACCOUNTS_API_URL;
 export const GATE_API_URL = process.env.APP_GATE_API_URL;
