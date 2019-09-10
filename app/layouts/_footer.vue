@@ -1,11 +1,48 @@
 <script>
-    import footerLinksData from 'noah-footer-links';
     import {NETWORK, MAINNET, TESTNET} from '~/assets/variables';
 
     export default {
         // first key not handled by webstorm intelliSense
         ideFix: 1,
-        footerLinkList: footerLinksData,
+        footerLinkList: [
+            {
+                slug: 'intro',
+                title: {
+                    en: 'Intro',
+                },
+                url: 'https://noahcoin.org/',
+            },
+            {
+                slug: 'network',
+                title: {
+                    en: 'Network',
+                },
+                url: 'http://testnet.noah-blockchain.com/',
+            },
+            {
+                slug: 'console',
+                title: {
+                    en: 'Console',
+                },
+                url: 'http://wallet.testnet.noah-blockchain.com/',
+                urlTestnet: 'http://wallet.testnet.noah-blockchain.com/',
+            },
+            {
+                slug: 'explorer',
+                title: {
+                    en: 'Explorer',
+                },
+                url: 'http://explorer.tesntet.noah-blockchain.com/',
+                urlTestnet: 'http://explorer.tesntet.noah-blockchain.com/',
+            },
+            {
+                slug: 'docs',
+                title: {
+                    en: 'Docs',
+                },
+                url: 'http://dock.noah-blockchain.com/',
+            },
+        ],
         props: {
             containerClass: {
                 type: String,
