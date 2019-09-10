@@ -7,9 +7,10 @@
   "scripts": {
     "prod": "npm run production",
     "production": "npm run build",
-    "dev": "gulp & nuxt --spa --port=3000 --host=localhost",
+    "postinstall": "gulp once && nuxt build --spa",
+    "dev": "gulp & nuxt --spa --port=3000",
     "build": "gulp once && nuxt build --spa",
-    "start": "nuxt start --spa --port=3000",
+    "start": "nuxt start --spa --host=0.0.0.0",
     "generate": "gulp once && nuxt generate --fail-on-error",
     "analyze": "gulp once && nuxt build --spa --analyze",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
@@ -58,7 +59,8 @@
     "vue-imask": "^5.2.0",
     "vue-inline-svg": "^1.1.2",
     "vuelidate": "^0.7.4",
-    "vuex-persistedstate": "^2.5.4"
+    "vuex-persistedstate": "^2.5.4",
+    "dotenv": "^8.1.0"
   },
   "devDependencies": {
     "@babel/runtime-corejs3": "^7.5.5",
@@ -68,7 +70,6 @@
     "beeper": "^2.0.0",
     "cross-env": "^5.2.0",
     "del": "^5.1.0",
-    "dotenv": "^8.1.0",
     "eslint": "^6.2.1",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.2.1",

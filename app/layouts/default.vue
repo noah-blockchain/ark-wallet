@@ -67,12 +67,6 @@
                                     {{ $td('Coiner', 'common.page-coiner') }}
                                 </nuxt-link>
                             </li>
-                            <li class="menu__item u-cell">
-                                <nuxt-link class="menu__link link--hover" :to="preferredPath('broadcast')" @click.native="linkClick">
-                                    <img class="menu__icon" src="/img/icon-feature-broadcast.svg" alt="" role="presentation">
-                                    {{ $td('Broadcast', 'common.page-broadcast') }}
-                                </nuxt-link>
-                            </li>
                             <li class="menu__item menu__user u-cell">
                                 <nuxt-link class="menu__link menu__user-link link--hover" :to="preferredPath('account')" @click.native="linkClick">
                                     <img class="menu__icon" src="/img/icon-feature-account.svg" alt="" role="presentation">

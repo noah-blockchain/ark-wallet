@@ -423,7 +423,7 @@
                     </label>
                     <span class="form-field__error" v-if="$v.form.crr.$dirty && !$v.form.crr.required">{{ $td('Enter CRR', 'form.coiner-create-crr-error-required') }}</span>
                     <span class="form-field__error" v-else-if="$v.form.crr.$dirty && !$v.form.crr.between">{{ $td('CRR should be between 10 and 100', 'form.coiner-create-crr-error-between') }}</span>
-                    <div class="form-field__help">{{ $td('CRR (Constant Reserve Ratio) reflects the volume of BIP reserves backing a newly issued coin. The higher the coefficient, the higher the reserves and thus the lower the volatility. And vice versa. The value should be integer and fall in the range from 10 to 100.', 'form.coiner-create-crr-help') }}</div>
+                    <div class="form-field__help">{{ $td('CRR (Constant Reserve Ratio) reflects the volume of Noah reserves backing a newly issued coin. The higher the coefficient, the higher the reserves and thus the lower the volatility. And vice versa. The value should be integer and fall in the range from 10 to 100.', 'form.coiner-create-crr-help') }}</div>
                 </div>
                 <div class="u-cell u-cell--xlarge--1-4 u-cell--xlarge--order-2" v-show="showAdvanced">
                     <label class="form-field" :class="{'is-error': $v.form.feeCoinSymbol.$error}">
@@ -548,14 +548,13 @@
             <!--@see https://github.com/noah-blockchain/noah-go-node/blob/master/core/transaction/create_coin.go#L93-->
             <template v-if="$i18n.locale === 'en'">
                 <p>Note: coin will be deleted if reserve is less than {{$store.getters.COIN_NAME}} {{$options.MIN_DESTROY_RESERVE}}, OR price is less than {{$store.getters.COIN_NAME}} {{$options.MIN_PRICE}}, OR volume is less than {{$options.MIN_SUPPLY}} coin</p>
-                <p>Coin Issue Sandbox: <a class="link--default" href="https://calculator.minter.network" target="_blank">calculator.minter.network</a></p>
                 <p>Ticker Symbol Fees:</p>
                 <p>
-                    3 letters — BIP 1 000 000<br>
-                    4 letters — BIP 100 000<br>
-                    5 letters — BIP 10 000<br>
-                    6 letters — BIP 1 000<br>
-                    7-10 letters — BIP 100<br>
+                    3 letters — Noah 1 000 000<br>
+                    4 letters — Noah 100 000<br>
+                    5 letters — Noah 10 000<br>
+                    6 letters — Noah 1 000<br>
+                    7-10 letters — Noah 100<br>
                 </p>
             </template>
             <template v-if="$i18n.locale === 'ru'">
@@ -563,11 +562,11 @@
                 <p>Вы можете проверить как работает связь между выпуском, резервом и CRR в нашем калькуляторе: <a class="link--default" href="https://calculator.minter.network" target="_blank">calculator.minter.network</a></p>
                 <p class="u-text-muted">Комиссии на длину тикера:</p>
                 <p class="u-text-muted">
-                    3 буквы — BIP 1 000 000<br>
-                    4 буквы — BIP 100 000<br>
-                    5 букв — BIP 10 000<br>
-                    6 букв — BIP 1 000<br>
-                    7-10 букв — BIP 100<br>
+                    3 буквы — Noah 1 000 000<br>
+                    4 буквы — Noah 100 000<br>
+                    5 букв — Noah 10 000<br>
+                    6 букв — Noah 1 000<br>
+                    7-10 букв — Noah 100<br>
                 </p>
             </template>
         </div>
