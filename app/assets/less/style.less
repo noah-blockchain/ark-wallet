@@ -9,7 +9,9 @@
 @import "include/layout";
 @import "include/modal";
 
-
+body {
+    background: rgba(0,0,0,0);
+}
 
 // vendor
 // mdc
@@ -187,6 +189,7 @@
 
 // footer
 
+
 .footer {
     background: url(../img/footer-bg.svg)
     no-repeat 50% 0, linear-gradient(87.65deg, #062959 40.4%, #89AFE2 139.16%); color: #fff;
@@ -194,6 +197,13 @@
     padding: 34px 0;
     width: 100%;
 }
+.non-auth {
+    .footer {
+        background: rgba(0,0,0,0) !important;
+        background-color: rgba(0,0,0,0) !important;
+    }
+}
+
 .footer__container {
     display: flex; justify-content: center; flex-wrap: wrap;
 }
@@ -218,14 +228,22 @@
 
 
 
-.auth {
+.non-auth-main-wrap {
     overflow: hidden;
-    background-size: cover;
     background-position: center;
-    padding-top: 120px;
-    background: url(../img/index-bg.svg)
-
-no-repeat 100% 100%, linear-gradient(87.65deg, #062959 40.4%, #89AFE2 139.16%);; color: #fff;
+    background: url(../img/index-bg.svg) no-repeat 100% 100%, linear-gradient(87.65deg, #062959 40.4%, #89AFE2 139.16%);
+    color: #fff;
+    background-size: cover;
+    .auth {
+        width: 100%;
+    }
+    .main-content {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 
 }
 

@@ -557,18 +557,6 @@
                     7-10 letters — Noah 100<br>
                 </p>
             </template>
-            <template v-if="$i18n.locale === 'ru'">
-                <p>Внимание: монета будет удалена, если ее резерв меньше {{$store.getters.COIN_NAME}} {{$options.MIN_DESTROY_RESERVE}} ИЛИ её цена ниже {{$store.getters.COIN_NAME}} {{$options.MIN_PRICE}} ИЛИ её объем выпуска меньше {{$options.MIN_SUPPLY}}</p>
-                <p>Вы можете проверить как работает связь между выпуском, резервом и CRR в нашем калькуляторе: <a class="link--default" href="https://calculator.minter.network" target="_blank">calculator.minter.network</a></p>
-                <p class="u-text-muted">Комиссии на длину тикера:</p>
-                <p class="u-text-muted">
-                    3 буквы — Noah 1 000 000<br>
-                    4 буквы — Noah 100 000<br>
-                    5 букв — Noah 10 000<br>
-                    6 букв — Noah 1 000<br>
-                    7-10 букв — Noah 100<br>
-                </p>
-            </template>
         </div>
 
 
@@ -588,17 +576,11 @@
                             <p v-if="$i18n.locale === 'en'">
                                 Selling <strong class="u-display-ib">{{ sellToLiquidateBySupplyPercent | prettyCeil }}% ({{ form.coinSymbol }} {{ sellToLiquidateBySupply | prettyCeil }})</strong> of initial supply will lead to <strong class="u-display-ib">coin liquidation</strong> by low supply. Do&nbsp;you want to&nbsp;continue?
                             </p>
-                            <p v-if="$i18n.locale === 'ru'">
-                                Продажа <strong class="u-display-ib">{{ sellToLiquidateBySupplyPercent | prettyCeil }}% ({{ form.coinSymbol }} {{ sellToLiquidateBySupply | prettyCeil }})</strong> от начальной эмиссии приведет к <strong class="u-display-ib">ликвидации монеты</strong> по причине низкой эмиссии. Вы&nbsp;уверены, что хотите&nbsp;продолжить?
-                            </p>
                         </div>
                         <div class="u-cell u-text-left" v-else-if="sellToLiquidateByReservePercent <= 30">
                             <p><strong>{{ $td('Warning', 'form.coiner-create-confirm-warning') }}</strong></p>
                             <p v-if="$i18n.locale === 'en'">
                                 Selling <strong class="u-display-ib">{{ sellToLiquidateByReservePercent | prettyCeil }}% ({{ form.coinSymbol }} {{ sellToLiquidateByReserve | prettyCeil }})</strong> of initial supply will lead to <strong class="u-display-ib">coin liquidation</strong> by low reserve. Do&nbsp;you want to&nbsp;continue?
-                            </p>
-                            <p v-if="$i18n.locale === 'ru'">
-                                Продажа <strong class="u-display-ib">{{ sellToLiquidateByReservePercent | prettyCeil }}% ({{ form.coinSymbol }} {{ sellToLiquidateByReserve | prettyCeil }})</strong> от начальной эмиссии приведет к <strong class="u-display-ib">ликвидации монеты</strong> по причине низкого резерва. Вы&nbsp;уверены, что хотите&nbsp;продолжить?
                             </p>
                         </div>
                         <template v-else>

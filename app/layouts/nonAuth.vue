@@ -19,7 +19,7 @@
 </script>
 
 <template>
-    <div class="main-wrap">
+    <div class="main-wrap non-auth-main-wrap">
         <header class="header">
             <div class="header__container u-container u-container--medium">
                 <nuxt-link class="header__logo no-link" :to="preferredPath('index')">
@@ -32,9 +32,9 @@
         </header>
 
         <nuxt class="main-content"/>
-
-        <Footer containerClass="u-container--medium"/>
-
+        <div class="non-auth">
+            <Footer containerClass="u-container--medium"/>
+        </div>
         <Snackbar/>
     </div>
 </template>
