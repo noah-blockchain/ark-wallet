@@ -4,7 +4,7 @@
             <div class="header__container u-container u-container--large">
                 <nuxt-link class="header__logo no-link" :to="preferredPath('index')">
                     <img class="header__logo-image" src="/img/noah-logo-circle.svg" alt="Noah" width="36" height="36">
-                    <div class="header__logo-text">{{ $store.state.sectionName || `${this.isTestnet ? 'Testnet ' : '' }Console` }}</div>
+                    <div class="header__logo-text">{{ $store.state.sectionName || `ARK web wallet` }}</div>
                 </nuxt-link>
 
                 <div class="header__controls">
@@ -89,13 +89,10 @@
                     <div class="u-container main-content__aside-section">
                         <ul class="services__list no-list u-grid u-grid--vertical-margin--small">
                             <li class="u-cell services__item--next-row">
-                                <a class="services__link link--hover" :href="`https://${isTestnet ? 'testnet.': ''}explorer.minter.network`" target="_blank">Explorer</a>
+                                <a class="services__link link--hover" :href="`https://explorer.tesntet.noah-blockchain.com`" target="_blank">Explorer</a>
                             </li>
                             <li class="u-cell">
-                                <a class="services__link link--hover" href="https://noah-blockchain.github.io/noah-go-node-docs/#tag/Node-API" target="_blank">API</a>
-                            </li>
-                            <li class="u-cell services__item--next-row">
-                                <a class="services__link link--hover" href="https://noah-blockchain.github.io/noah-go-node-docs/#section/Noah-SDKs" target="_blank">SDK</a>
+                                <a class="services__link link--hover" href=" https://github.com/noah-blockchain/api/releases" target="_blank">API</a>
                             </li>
                             <li class="u-cell services__item--next-row">
                                 <a class="services__link link--hover" href="https://help.minter.network" target="_blank">Help/FAQ</a>

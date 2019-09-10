@@ -22,7 +22,7 @@
             {
                 slug: 'console',
                 title: {
-                    en: 'Console',
+                    en: 'Ark wallet ',
                 },
                 url: 'http://wallet.testnet.noah-blockchain.com/',
                 urlTestnet: 'http://wallet.testnet.noah-blockchain.com/',
