@@ -72,13 +72,8 @@ body {
 .main-content__aside {
     position: absolute; z-index: 2; /* higher than input buttons */ top: @header-height; min-height: calc(100% - @header-height); overflow: auto; background: #fff;}
 .main-content__aside-section {padding-top: 24px; padding-bottom: 24px;}
-.main-content__main {
-    margin-top: 64px;
-}
+
 @media (min-width: @breakpoint-medium-up) {
-    .main-content__aside {
-        margin-top: 64px;
-    }
     .main-content--grid {display: flex;}
     .main-content__aside {width: 256px; flex-shrink: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: static; overflow: visible;}
     .main-content__main {flex-grow: 2; width: calc(100% - 256px);}
@@ -134,7 +129,6 @@ body {
 
 @header-height: 64px;
 .header {
-    position: absolute;
     color: #fff;
     width: 100%
 }
