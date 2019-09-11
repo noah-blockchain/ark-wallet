@@ -74,7 +74,7 @@
                                 </nuxt-link>
 
                                 <button class="menu__user-logout u-semantic-button u-hidden-medium-up" data-test-id="headerLogoutButton" @click="logout">
-                                    <img class="" src="/img/icon-auth-logout-menu.svg" alt="Logout">
+                                    <img class="" src="/img/icon-auth-logout-menu.svg" width="28" height="28" alt="Logout">
                                 </button>
                             </li>
                         </menu>
