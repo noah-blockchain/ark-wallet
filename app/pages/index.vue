@@ -65,9 +65,7 @@
             },
         },
         methods: {
-
         },
-
     };
 </script>
 
