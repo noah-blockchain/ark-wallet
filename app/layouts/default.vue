@@ -89,7 +89,7 @@
                                 <a class="services__link link--hover" href=" https://github.com/noah-blockchain/api/releases" target="_blank">API</a>
                             </li>
                             <li class="u-cell services__item--next-row">
-                                <a class="services__link link--hover" href="https://help.minter.network" target="_blank">Help/FAQ</a>
+                                <a class="services__link link--hover" href="https://help.noah-blockchain.com" target="_blank">Help/FAQ</a>
                             </li>
                         </ul>
                     </div>
