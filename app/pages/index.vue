@@ -2,8 +2,6 @@
     import {mapGetters} from 'vuex';
     import getTitle from '~/assets/get-title';
     import {NETWORK, TESTNET} from '~/assets/variables';
-    import AuthSignInForm from "~/components/AuthSignInForm";
-    import AuthRegisterForm from "~/components/AuthRegisterForm";
     import AuthAdvancedForm from "~/components/AuthAdvancedForm";
     import AuthAdvancedGenerate from "~/components/AuthAdvancedGenerate";
 
@@ -11,8 +9,6 @@
         layout: 'nonAuth',
         components: {
             AuthAdvancedGenerate,
-            AuthRegisterForm,
-            AuthSignInForm,
             AuthAdvancedForm,
         },
         directives: {
