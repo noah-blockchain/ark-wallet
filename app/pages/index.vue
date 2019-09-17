@@ -1,3 +1,40 @@
+<template>
+    <main>
+        <div class="auth u-section" data-test-id="authSection">
+            <div class="u-container u-container--medium">
+                <div class="u-grid u-grid--vertical-margin">
+                    <div class="u-cell u-cell--medium--1-2">
+                        <div class="panel">
+                            <div class="panel__header">
+                                <h1 class="panel__header-title">
+                                    <img class="panel__header-title-icon" src="/img/icon-auth-sign-in.svg" alt=""
+                                         role="presentation" width="32" height="32">
+                                    {{ $td('SIGN IN WITH SEED PHRASE', 'index.auth-sign-in-title') }}
+                                </h1>
+                            </div>
+                            <AuthAdvancedForm :isAuthAddress="true"/>
+                        </div>
+                    </div>
+
+                    <div class="u-cell u-cell--medium--1-2">
+                        <div class="panel">
+                            <div class="panel__header">
+                                <h1 class="panel__header-title">
+                                    <img class="panel__header-title-icon" src="/img/icon-auth-register.svg" alt="" role="presentation" width="32" height="32">
+                                    {{ $td('Create wallet', 'index.auth-sign-up-seed-title') }}
+                                </h1>
+                            </div>
+                            <AuthAdvancedGenerate/>
+                            <div class="panel__section">
+                                <a class="link--default" href="https://github.com/noah-blockchain/noah-console-web/releases" target="_blank">{{ $td('Generate locally (Github)', 'index.auth-sign-up-seed-offline') }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>
 <script>
     import {mapGetters} from 'vuex';
     import getTitle from '~/assets/get-title';
@@ -64,41 +101,3 @@
         },
     };
 </script>
-
-<template>
-    <main>
-        <div class="auth u-section" data-test-id="authSection">
-            <div class="u-container u-container--medium">
-                <div class="u-grid u-grid--vertical-margin">
-                    <div class="u-cell u-cell--medium--1-2">
-                        <div class="panel">
-                            <div class="panel__header">
-                                <h1 class="panel__header-title">
-                                    <img class="panel__header-title-icon" src="/img/icon-auth-sign-in.svg" alt=""
-                                         role="presentation" width="32" height="32">
-                                    {{ $td('SIGN IN WITH SEED PHRASE', 'index.auth-sign-in-title') }}
-                                </h1>
-                            </div>
-                            <AuthAdvancedForm :isAuthAddress="true"/>
-                        </div>
-                    </div>
-
-                    <div class="u-cell u-cell--medium--1-2">
-                        <div class="panel">
-                            <div class="panel__header">
-                                <h1 class="panel__header-title">
-                                    <img class="panel__header-title-icon" src="/img/icon-auth-register.svg" alt="" role="presentation" width="32" height="32">
-                                    {{ $td('Create wallet', 'index.auth-sign-up-seed-title') }}
-                                </h1>
-                            </div>
-                            <AuthAdvancedGenerate/>
-                            <div class="panel__section">
-                                <a class="link--default" href="https://github.com/noah-blockchain/noah-console-web/releases" target="_blank">{{ $td('Generate locally (Github)', 'index.auth-sign-up-seed-offline') }}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-</template>
