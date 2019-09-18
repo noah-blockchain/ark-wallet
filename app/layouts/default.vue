@@ -43,12 +43,6 @@
                                 </nuxt-link>
                             </li>
                             <li class="menu__item u-cell">
-                                <nuxt-link class="menu__link link--hover" :to="preferredPath('checks')" @click.native="linkClick">
-                                    <img class="menu__icon" src="/img/icon-feature-check.svg" alt="" role="presentation">
-                                    {{ $td('Checks', 'common.page-checks') }}
-                                </nuxt-link>
-                            </li>
-                            <li class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover" :to="preferredPath('delegation')"  @click.native="linkClick">
                                     <img class="menu__icon" src="/img/icon-feature-mining.svg" alt="" role="presentation">
                                     {{ $td('Delegation', 'common.page-delegation') }}
