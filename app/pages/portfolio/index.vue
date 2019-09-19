@@ -30,7 +30,7 @@
             pretty,
         },
         fetch({ app, store }) {
-            store.commit('SET_SECTION_NAME', app.$td('Wallet', 'common.page-wallet'));
+            store.commit('SET_SECTION_NAME', app.$td('Portfolio', 'common.page-wallet'));
             return Promise.resolve();
         },
         asyncData({ store }) {

@@ -9,7 +9,7 @@
             CoinBuyForm,
         },
         fetch({ app, store }) {
-            store.commit('SET_SECTION_NAME', app.$td('Convert', 'common.page-convert'));
+            store.commit('SET_SECTION_NAME', app.$td('Exchange', 'common.page-convert'));
             return Promise.resolve();
         },
         head() {

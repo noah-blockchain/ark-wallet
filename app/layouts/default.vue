@@ -3,7 +3,7 @@
         <header class="header">
             <div class="header__container u-container u-container--large">
                 <nuxt-link class="header__logo no-link" :to="preferredPath('index')">
-                    <img class="header__logo-image" src="/img/noah-logo-circle.svg" alt="Noah" width="36" height="36">
+                    <img class="header__logo-image" src="/img/noah-logo-circle.svg" alt="Noah" width="42" height="42">
                     <div class="header__logo-text">{{ $store.state.sectionName || `ARK web wallet` }}</div>
                 </nuxt-link>
 
@@ -11,7 +11,7 @@
                     <div class="header__user u-hidden-medium-down">
                         <nuxt-link class="button button--ghost-white" :to="preferredPath('account')" v-if="username">{{ username }}</nuxt-link>
                         <button class="header__user-logout u-semantic-button" data-test-id="headerLogoutButton" @click="logout">
-                            <img class="" src="/img/icon-auth-logout.svg" width="28" height="28" alt="Logout">
+                            <img class="" src="/img/icon-auth-logout.svg" width="32" height="32" alt="Logout">
                         </button>
                         <Language/>
                     </div>
@@ -31,13 +31,13 @@
                     <div class="u-container main-content__aside-section">
                         <menu class="menu no-list u-grid u-grid--vertical-margin--small">
                             <li class="menu__item u-cell">
-                                <nuxt-link class="menu__link link--hover" :to="preferredPath('wallet')" @click.native="linkClick">
+                                <nuxt-link class="menu__link link--hover" :to="preferredPath('portfolio')" @click.native="linkClick">
                                     <img class="menu__icon" src="/img/wallet.svg" alt="" role="presentation">
                                     {{ $td('Portfolio', 'common.page-wallet') }}
                                 </nuxt-link>
                             </li>
                             <li class="menu__item u-cell">
-                                <nuxt-link class="menu__link link--hover" :to="preferredPath('convert')" @click.native="linkClick">
+                                <nuxt-link class="menu__link link--hover" :to="preferredPath('exchange')" @click.native="linkClick">
                                     <img class="menu__icon" src="/img/transfer.svg" alt="" role="presentation">
                                     {{ $td('Exchange', 'common.page-convert') }}
                                 </nuxt-link>
