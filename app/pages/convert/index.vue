@@ -1,13 +1,11 @@
 <script>
     import getTitle from '~/assets/get-title';
     import CoinSellForm from '~/components/CoinSellForm';
-    import CoinSellAllForm from '~/components/CoinSellAllForm';
     import CoinBuyForm from '~/components/CoinBuyForm';
 
     export default {
         components: {
             CoinSellForm,
-            CoinSellAllForm,
             CoinBuyForm,
         },
         fetch({ app, store }) {
@@ -35,9 +33,6 @@
 <template>
     <section class="u-section u-container">
         <CoinSellForm/>
-
-        <CoinSellAllForm/>
-
         <CoinBuyForm/>
     </section>
 </template>
