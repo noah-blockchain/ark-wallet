@@ -33,13 +33,13 @@
                             <li class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover" :to="preferredPath('wallet')" @click.native="linkClick">
                                     <img class="menu__icon" src="/img/icon-feature-coin-transfer.svg" alt="" role="presentation">
-                                    {{ $td('Wallet', 'common.page-wallet') }}
+                                    {{ $td('Portfolio', 'common.page-wallet') }}
                                 </nuxt-link>
                             </li>
                             <li class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover" :to="preferredPath('convert')" @click.native="linkClick">
                                     <img class="menu__icon" src="/img/icon-feature-convert.svg" alt="" role="presentation">
-                                    {{ $td('Convert', 'common.page-convert') }}
+                                    {{ $td('Exchange', 'common.page-convert') }}
                                 </nuxt-link>
                             </li>
                             <li class="menu__item u-cell">
