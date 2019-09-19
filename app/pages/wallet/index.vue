@@ -94,15 +94,18 @@
     <section class="u-section u-container">
         <div class="panel panel__header wallet__info">
             <div class="wallet__address">
-                <img class="wallet__address-icon u-hidden-small-down" src="/img/icon-wallet.svg" width="40" height="40" alt="" role="presentation">
+                <img class="wallet__address-icon u-hidden-small-down" src="/img/icon-wallet-white.svg" width="40" height="40" alt="" role="presentation">
                 <div class="wallet__address-content">
                     <div>{{ $td('Your address:', 'wallet.address') }}</div>
                     <div class="wallet__value u-icon-wrap">
-                        <a class="link--default u-icon-text" :href="addressUrl" target="_blank" data-test-id="walletAddressLink">{{ address }}</a>
+                        <a class="link--default u-icon-text"
+                           style="color: #fff"
+                           :href="addressUrl" target="_blank" data-test-id="walletAddressLink">{{ address }}</a>
                         <ButtonCopyIcon class="white" :copy-text="address"/>
 
-                        <button class="u-icon u-icon--qr--right  u-semantic-button link--opacity" @click="isAddressQrModalVisible = true">
-                            <InlineSvg src="/img/icon-qr-white.svg" class="white"  width="24" height="24"/>
+                        <button class="u-icon u-icon--qr--right  u-semantic-button link--opacity" style="width: 86px"
+                                @click="isAddressQrModalVisible = true">
+                            <InlineSvg src="/img/icon-qr-white.svg" class="white"  width="32" height="32"/>
                         </button>
                     </div>
                 </div>

@@ -284,7 +284,7 @@
 <template>
     <form class="panel__section" novalidate @submit.prevent="submit">
         <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-            <div class="u-cell u-cell--xlarge--1-2">
+            <div class="u-cell u-cell--xlarge--1-1" style="margin-bottom: 10px">
                 <FieldDomain
                     v-model.trim="form.address"
                     :$value="$v.form.address"
@@ -325,16 +325,6 @@
                 />
                 <span class="form-field__error" v-if="$v.form.stake.$dirty && !$v.form.stake.required">{{ $td('Enter stake', 'form.masternode-stake-error-required') }}</span>
             </div>
-            <div class="u-cell u-cell--xlarge--3-4">
-                <FieldDomain
-                    v-model.trim="form.publicKey"
-                    :$value="$v.form.publicKey"
-                    valueType="publicKey"
-                    :label="$td('Public key or domain', 'form.masternode-public')"
-                    @update:domain="publicKeyDomain = $event"
-                    @update:resolving="isPublicKeyDomainResolving = $event"
-                />
-            </div>
             <div class="u-cell u-cell--xlarge--1-4">
                 <label class="form-field" :class="{'is-error': $v.form.commission.$error}">
                     <VueAutonumeric class="form-field__input" type="text" inputmode="numeric" v-check-empty="'autoNumeric:formatted'"
@@ -359,7 +349,17 @@
                 <span class="form-field__error" v-if="$v.form.commission.$dirty && !$v.form.commission.required">{{ $td('Enter commission', 'form.masternode-commission-error-required') }}</span>
                 <span class="form-field__error" v-else-if="$v.form.commission.$dirty && !$v.form.commission.between">{{ $td('Must be between 0 and 100', 'form.masternode-commission-error-between') }}</span>
             </div>
-            <div class="u-cell u-cell--xlarge--1-4 u-cell--xlarge--order-2" v-show="showAdvanced">
+            <div class="u-cell u-cell--xlarge--1-1">
+                <FieldDomain
+                    v-model.trim="form.publicKey"
+                    :$value="$v.form.publicKey"
+                    valueType="publicKey"
+                    :label="$td('Public key or domain', 'form.masternode-public')"
+                    @update:domain="publicKeyDomain = $event"
+                    @update:resolving="isPublicKeyDomainResolving = $event"
+                />
+            </div>
+            <div class="u-cell u-cell--xlarge--1-4 u-cell--xlarge--order-1" v-show="showAdvanced">
                 <label class="form-field" :class="{'is-error': $v.form.feeCoinSymbol.$error}">
                     <select class="form-field__input form-field__input--select is-not-empty"
                             v-model="form.feeCoinSymbol"
