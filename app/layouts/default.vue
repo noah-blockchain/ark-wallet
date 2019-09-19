@@ -62,6 +62,14 @@
                                 </nuxt-link>
                             </li>
                             <li class="menu__item menu__user u-cell">
+                                <a
+                                    target="_blank"
+                                    href="https://www.btcnext.io/" class="menu__link menu__user-link link--hover" :to="preferredPath('account')" @click.native="linkClick">
+                                    <img class="menu__icon" src="/img/buy.svg" alt="" role="presentation">
+                                    <span class="menu__user-name">{{$td('Buy coin', 'common.page-buy') }}</span>
+                                </a>
+                            </li>
+                            <li class="menu__item menu__user u-cell">
                                 <nuxt-link class="menu__link menu__user-link link--hover" :to="preferredPath('account')" @click.native="linkClick">
                                     <img class="menu__icon" src="/img/user.svg" alt="" role="presentation">
                                     <span class="menu__user-name">{{ $store.state.user.username || $td('Account', 'common.page-account') }}</span>
