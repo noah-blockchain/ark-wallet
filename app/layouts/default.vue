@@ -32,38 +32,38 @@
                         <menu class="menu no-list u-grid u-grid--vertical-margin--small">
                             <li class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover" :to="preferredPath('wallet')" @click.native="linkClick">
-                                    <img class="menu__icon" src="/img/icon-feature-coin-transfer.svg" alt="" role="presentation">
+                                    <img class="menu__icon" src="/img/wallet.svg" alt="" role="presentation">
                                     {{ $td('Portfolio', 'common.page-wallet') }}
                                 </nuxt-link>
                             </li>
                             <li class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover" :to="preferredPath('convert')" @click.native="linkClick">
-                                    <img class="menu__icon" src="/img/icon-feature-convert.svg" alt="" role="presentation">
+                                    <img class="menu__icon" src="/img/transfer.svg" alt="" role="presentation">
                                     {{ $td('Exchange', 'common.page-convert') }}
                                 </nuxt-link>
                             </li>
                             <li class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover" :to="preferredPath('delegation')"  @click.native="linkClick">
-                                    <img class="menu__icon" src="/img/icon-feature-mining.svg" alt="" role="presentation">
+                                    <img class="menu__icon" src="/img/court.svg" alt="" role="presentation">
                                     {{ $td('Delegation', 'common.page-delegation') }}
                                 </nuxt-link>
                             </li>
 
                             <li class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover" :to="preferredPath('masternode')" @click.native="linkClick">
-                                    <img class="menu__icon" src="/img/icon-feature-node-management.svg" alt="" role="presentation">
+                                    <img class="menu__icon" src="/img/blockchain.svg" alt="" role="presentation">
                                     {{ $td('Masternode', 'common.page-masternode') }}
                                 </nuxt-link>
                             </li>
                             <li class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover" :to="preferredPath('coiner')" @click.native="linkClick">
-                                    <img class="menu__icon" src="/img/icon-feature-coin-creation.svg" alt="" role="presentation">
+                                    <img class="menu__icon" src="/img/coins.svg" alt="" role="presentation">
                                     {{ $td('Coiner', 'common.page-coiner') }}
                                 </nuxt-link>
                             </li>
                             <li class="menu__item menu__user u-cell">
                                 <nuxt-link class="menu__link menu__user-link link--hover" :to="preferredPath('account')" @click.native="linkClick">
-                                    <img class="menu__icon" src="/img/icon-feature-account.svg" alt="" role="presentation">
+                                    <img class="menu__icon" src="/img/user.svg" alt="" role="presentation">
                                     <span class="menu__user-name">{{ $store.state.user.username || $td('Account', 'common.page-account') }}</span>
                                 </nuxt-link>
 

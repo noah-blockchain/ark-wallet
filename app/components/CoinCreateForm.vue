@@ -550,11 +550,11 @@
                 <p>Note: coin will be deleted if reserve is less than {{$store.getters.COIN_NAME}} {{$options.MIN_DESTROY_RESERVE}}, OR price is less than {{$store.getters.COIN_NAME}} {{$options.MIN_PRICE}}, OR volume is less than {{$options.MIN_SUPPLY}} coin</p>
                 <p>Ticker Symbol Fees:</p>
                 <p>
-                    3 letters — Noah 1 000 000<br>
-                    4 letters — Noah 100 000<br>
-                    5 letters — Noah 10 000<br>
-                    6 letters — Noah 1 000<br>
-                    7-10 letters — Noah 100<br>
+                    3 letters — NOAH 1 000 000<br>
+                    4 letters — NOAH 100 000<br>
+                    5 letters — NOAH 10 000<br>
+                    6 letters — NOAH 1 000<br>
+                    7-10 letters — NOAH 100<br>
                 </p>
             </template>
         </div>
