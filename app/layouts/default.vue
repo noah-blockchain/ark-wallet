@@ -9,7 +9,7 @@
 
                 <div class="header__controls">
                     <div class="header__user u-hidden-medium-down">
-                        <nuxt-link class="button button--ghost-white" :to="preferredPath('account')" v-if="username">{{ username }}</nuxt-link>
+                        <nuxt-link class="button button--ghost-white" :to="preferredPath('account')" v-if="username">{{ shortAddress(username) }}</nuxt-link>
                         <button class="header__user-logout u-semantic-button" data-test-id="headerLogoutButton" @click="logout">
                             <img class="" src="/img/icon-auth-logout.svg" width="32" height="32" alt="Logout">
                         </button>
@@ -114,6 +114,8 @@
     import Snackbar from '~/components/common/Snackbar';
     import Language from '~/layouts/_language';
     import Footer from '~/layouts/_footer';
+    import {shortAddress} from "../utils/text";
+    import {isDesktop} from "../utils/checker";
 
     export default {
         components: {
@@ -125,6 +127,7 @@
             return {
                 isMenuActive: false,
                 isDesktop: isDesktop(),
+                shortAddress
             };
         },
         computed: {
@@ -168,9 +171,5 @@
         if (this.isDesktop) {
             this.isMenuActive = false;
         }
-    }
-
-    function isDesktop() {
-        return process.client && document.body.clientWidth >= 700;
     }
 </script>

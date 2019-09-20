@@ -5,6 +5,8 @@
     import InlineSvg from 'vue-inline-svg';
     import Modal from '~/components/common/Modal';
     import ButtonCopyIcon from '~/components/common/ButtonCopyIcon';
+    import {isDesktop} from "../../utils/checker";
+    import {shortAddress} from "../../utils/text";
 
     export default {
         components: {
@@ -36,6 +38,8 @@
         },
         data() {
             return {
+                isDesktop: isDesktop(),
+                shortAddress,
                 visiblePrivate: false,
                 visibleMnemonic: false,
                 isAddressQrModalVisible: false,
@@ -75,7 +79,7 @@
 
                 <dt>{{ $td('Address:', 'account.address') }}</dt>
                 <dd class="u-icon-wrap">
-                    <a class="link--default u-icon-text" :href="addressUrl" target="_blank">{{ address }}</a>
+                    <a class="link--default u-icon-text" :href="addressUrl" target="_blank">{{ isDesktop ? address : shortAddress(address) }}</a>
                     <ButtonCopyIcon class="black" :copy-text="address"/>
                     <button class="u-icon u-icon--qr--right u-semantic-button link--opacity" @click="isAddressQrModalVisible = true">
                         <InlineSvg src="/img/icon-qr-black.svg" width="32" height="32"/>

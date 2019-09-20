@@ -11,12 +11,15 @@
     import CoinSendForm from '~/components/CoinSendForm';
     import CoinList from '~/components/CoinList';
     import TransactionLatestList from '~/components/TransactionLatestList';
+    import {isDesktop} from "../../utils/checker";
+    import {shortAddress} from "../../utils/text";
 
     function getAddressLatestTransactionList(addres) {
         return getAddressTransactionList(addres, {limit: 5});
     }
 
     export default {
+
         components: {
             QrcodeVue,
             InlineSvg,
@@ -63,6 +66,8 @@
         },
         data() {
             return {
+                isDesktop: isDesktop(),
+                shortAddress,
                 /** @type Array<Transaction> */
                 txList: [],
                 isAddressQrModalVisible: false,
@@ -100,7 +105,7 @@
                     <div class="wallet__value u-icon-wrap">
                         <a class="link--default u-icon-text"
                            style="color: #fff"
-                           :href="addressUrl" target="_blank" data-test-id="walletAddressLink">{{ address }}</a>
+                           :href="addressUrl" target="_blank" data-test-id="walletAddressLink">{{isDesktop ? address : shortAddress(address) }}</a>
                         <ButtonCopyIcon class="white" :copy-text="address"/>
 
                         <button class="u-icon u-icon--qr--right  u-semantic-button link--opacity" style="width: 86px"
