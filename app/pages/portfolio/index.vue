@@ -117,7 +117,7 @@
                 /** @type Array<Transaction> */
                 txList: [],
                 isAddressQrModalVisible: false,
-                balance: 0,
+                balance: '...',
                 currency: '...'
             };
         },
@@ -125,7 +125,8 @@
             let currency = localStorage.getItem('currency');
             if (currency === null) currency = 'NOAH';
             this.currency = currency;
-            const rate_result = await rate(this.baseCoin ? this.baseCoin.amount : 0 | pretty);
+            const baseCoin = this.$store.state.balance.find((coinItem) => (coinItem.coin === 'MNT'));
+            const rate_result = await rate(baseCoin ? baseCoin.amount : 0 | pretty);
             this.balance = rate_result[currency];
         },
         computed: {
