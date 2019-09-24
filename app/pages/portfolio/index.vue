@@ -1,3 +1,48 @@
+<template>
+    <section class="u-section u-container">
+        <div class="panel panel__header wallet__info">
+            <div class="wallet__address">
+                <img class="wallet__address-icon u-hidden-small-down" src="/img/icon-wallet-white.svg" width="40"
+                     height="40" alt="" role="presentation">
+                <div class="wallet__address-content">
+                    <div>{{ $td('Your address:', 'wallet.address') }}</div>
+                    <div class="wallet__value u-icon-wrap">
+                        <a class="link--default u-icon-text"
+                           style="color: #fff"
+                           :href="addressUrl" target="_blank" data-test-id="walletAddressLink">{{isDesktop ? address :
+                            shortAddress(address) }}</a>
+                        <ButtonCopyIcon class="white" :copy-text="address"/>
+
+                        <button class="u-icon u-icon--qr--right  u-semantic-button link--opacity" style="width: 86px"
+                                @click="isAddressQrModalVisible = true">
+                            <InlineSvg src="/img/icon-qr-white.svg" class="white" width="32" height="32"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="wallet__balance" v-if="!$store.getters.isOfflineMode">
+                <div>{{ $td('Your balance:', 'wallet.balance') }}</div>
+                <div class="wallet__value" data-test-id="walletBalanceValue">
+                    {{ balance }} {{ currency }}
+                </div>
+            </div>
+        </div>
+        <CoinSendForm/>
+
+        <CoinList/>
+
+        <TransactionLatestList :tx-list="txList" v-if="txList.length"/>
+
+        <Modal class="qr-modal"
+               v-bind:isOpen.sync="isAddressQrModalVisible"
+        >
+            <QrcodeVue class="qr-modal__layer" :value="address" :size="280" level="L"></QrcodeVue>
+        </Modal>
+
+    </section>
+</template>
+
+
 <script>
     import {mapGetters} from 'vuex';
     import {getAddressTransactionList} from "~/api";
@@ -13,9 +58,10 @@
     import TransactionLatestList from '~/components/TransactionLatestList';
     import {isDesktop} from "../../utils/checker";
     import {shortAddress} from "../../utils/text";
+    import {rate} from "../../utils/rates";
 
-    function getAddressLatestTransactionList(addres) {
-        return getAddressTransactionList(addres, {limit: 5});
+    function getAddressLatestTransactionList(address) {
+        return getAddressTransactionList(address, {limit: 5});
     }
 
     export default {
@@ -32,11 +78,11 @@
         filters: {
             pretty,
         },
-        fetch({ app, store }) {
+        fetch({app, store}) {
             store.commit('SET_SECTION_NAME', app.$td('Portfolio', 'common.page-wallet'));
             return Promise.resolve();
         },
-        asyncData({ store }) {
+        asyncData({store}) {
             if (store.getters.isOfflineMode) {
                 return {
                     txList: [],
@@ -51,16 +97,16 @@
         },
         head() {
             const title = getTitle(this.$store.state.sectionName, this.$i18n.locale);
-            const description = this.$td(`Transact NOAH and other coins issued in the NOAH ${this.isTestnet ? 'test ': ''}network. Almost instantly and fee-free.`, this.isTestnet ? 'wallet.seo-description-testnet' : 'wallet.seo-description');
+            const description = this.$td(`Transact NOAH and other coins issued in the NOAH ${this.isTestnet ? 'test ' : ''}network. Almost instantly and fee-free.`, this.isTestnet ? 'wallet.seo-description-testnet' : 'wallet.seo-description');
             const localeSuffix = this.$i18n.locale === 'en' ? '' : '-' + this.$i18n.locale;
 
             return {
                 title: title,
                 meta: [
-                    { hid: 'og-title', name: 'og:title', content: title },
-                    { hid: 'description', name: 'description', content: description },
-                    { hid: 'og-description', name: 'og:description', content: description },
-                    { hid: 'og-image', name: 'og:image', content: `/img/social-share-wallet${localeSuffix}.png` },
+                    {hid: 'og-title', name: 'og:title', content: title},
+                    {hid: 'description', name: 'description', content: description},
+                    {hid: 'og-description', name: 'og:description', content: description},
+                    {hid: 'og-image', name: 'og:image', content: `/img/social-share-wallet${localeSuffix}.png`},
                 ],
             };
         },
@@ -71,7 +117,16 @@
                 /** @type Array<Transaction> */
                 txList: [],
                 isAddressQrModalVisible: false,
+                balance: 0,
+                currency: '...'
             };
+        },
+        async mounted() {
+            let currency = localStorage.getItem('currency');
+            if (currency === null) currency = 'NOAH';
+            this.currency = currency;
+            const rate_result = await rate(this.baseCoin ? this.baseCoin.amount : 0 | pretty);
+            this.balance = rate_result[currency];
         },
         computed: {
             ...mapGetters([
@@ -85,7 +140,7 @@
         },
         watch: {
             // update tx list on balance updated
-            "$store.state.balance": function() {
+            "$store.state.balance": function () {
                 getAddressLatestTransactionList(this.address)
                     .then((txListInfo) => {
                         this.txList = txListInfo.data;
@@ -94,46 +149,3 @@
         },
     };
 </script>
-
-<template>
-    <section class="u-section u-container">
-        <div class="panel panel__header wallet__info">
-            <div class="wallet__address">
-                <img class="wallet__address-icon u-hidden-small-down" src="/img/icon-wallet-white.svg" width="40" height="40" alt="" role="presentation">
-                <div class="wallet__address-content">
-                    <div>{{ $td('Your address:', 'wallet.address') }}</div>
-                    <div class="wallet__value u-icon-wrap">
-                        <a class="link--default u-icon-text"
-                           style="color: #fff"
-                           :href="addressUrl" target="_blank" data-test-id="walletAddressLink">{{isDesktop ? address : shortAddress(address) }}</a>
-                        <ButtonCopyIcon class="white" :copy-text="address"/>
-
-                        <button class="u-icon u-icon--qr--right  u-semantic-button link--opacity" style="width: 86px"
-                                @click="isAddressQrModalVisible = true">
-                            <InlineSvg src="/img/icon-qr-white.svg" class="white"  width="32" height="32"/>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="wallet__balance" v-if="!$store.getters.isOfflineMode">
-                <div>{{ $td('Your balance:', 'wallet.balance') }}</div>
-                <div class="wallet__value" data-test-id="walletBalanceValue">
-                    {{ baseCoin ? baseCoin.amount : 0 | pretty }} {{ $store.getters.COIN_NAME }}
-                </div>
-            </div>
-        </div>
-
-        <CoinSendForm/>
-
-        <CoinList/>
-
-        <TransactionLatestList :tx-list="txList" v-if="txList.length"/>
-
-        <Modal class="qr-modal"
-               v-bind:isOpen.sync="isAddressQrModalVisible"
-        >
-            <QrcodeVue class="qr-modal__layer" :value="address" :size="280" level="L"></QrcodeVue>
-        </Modal>
-
-    </section>
-</template>

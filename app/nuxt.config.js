@@ -41,7 +41,7 @@ function prepareCSP(env, keyFilter) {
 }
 
 const connectCSP = prepareCSP(envConfigParsed, (item) => {
-    return item.indexOf('API_URL') >= 0 || item.indexOf('RTM_URL') >= 0 || item.indexOf('API_HOST') >= 0;
+    return item.indexOf('API_URL') >= 0 || item.indexOf('RTM_URL') >= 0 || item.indexOf('API_HOST') >= 0 || item.indexOf('API_RATE') >= 0;
 });
 const imageCSP = prepareCSP(envConfigParsed, (item) => {
     return item === 'APP_ACCOUNTS_API_URL';
