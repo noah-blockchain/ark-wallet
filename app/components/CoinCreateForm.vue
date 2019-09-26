@@ -11,7 +11,7 @@
     import CreateCoinTxParams from "noah-js-sdk/src/tx-params/create-coin";
     import {TX_TYPE_CREATE_COIN} from 'noahjs-tx/src/tx-types';
     import prepareSignedTx from 'noah-js-sdk/src/tx';
-    import {sellCoin, sellCoinByBip} from 'noahjs-util/src/coin-math';
+    import {sellCoin, sellCoinByNoah} from 'noahjs-util/src/coin-math';
     import {postTx} from '~/api/gate';
     import FeeBus from '~/assets/fee';
     import checkEmpty from '~/assets/v-check-empty';
@@ -194,7 +194,7 @@
                 return calculatePrice(this.form);
             },
             sellToLiquidateByReserve() {
-                return sellCoinByBip(formToCoin(this.form), this.form.initialReserve - MIN_DESTROY_RESERVE);
+                return sellCoinByNoah(formToCoin(this.form), this.form.initialReserve - MIN_DESTROY_RESERVE);
             },
             sellToLiquidateBySupply() {
                 return Math.max(this.form.initialAmount - MIN_SUPPLY, 0.000000000000000001);

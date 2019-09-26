@@ -66,7 +66,7 @@
                             return 0;
                         }
                         // move coins first if it's name starts with current value
-                        // prevent "ABIP" coin to be higher than "BIP" for "BIP" request
+                        // prevent "ANOAH" coin to be higher than "NOAH" for "NOAH" request
                         const aHasStartValue = a.symbol.indexOf(this.value) === 0;
                         const bHasStartValue = b.symbol.indexOf(this.value) === 0;
                         // need to save browser's datalist order to prevent lose these values after slice
