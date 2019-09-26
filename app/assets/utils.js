@@ -142,7 +142,7 @@ export function prettyExact(value) {
  * @return {string}
  */
 export function shortHashFilter(value, endLength = 6, minLengthToShort) {
-    const startLength = (endLength <= 4 ? endLength : endLength - 1)  + 'Mx'.length;
+    const startLength = (endLength <= 4 ? endLength : endLength - 1)  + 'NOAHx'.length;
     minLengthToShort = minLengthToShort || startLength + endLength;
     value = value.toString();
     const isLong = value.length > minLengthToShort;

@@ -1,9 +1,9 @@
 # Noah Console Website
 
-[![Build Status](https://img.shields.io/travis/MinterTeam/minter-console-web.svg?style=flat-square)](https://travis-ci.org/MinterTeam/minter-console-web)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/MinterTeam/minter-console-web/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/travis//noah-blockchain/web-console.svg?style=flat-square)](https://travis-ci.org//noah-blockchain/web-console)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com//noah-blockchain/web-console/blob/master/LICENSE)
 
-This is the repository containing the code for the official Noah Console website [console.minter.network](https://console.minter.network)
+This is the repository containing the code for the official Noah Console website [ark.testnet.noah-blockchain.com](https://ark.testnet.noah-blockchain.com)
 
 ## Install
 

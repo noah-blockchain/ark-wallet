@@ -105,7 +105,7 @@ export function checkDomainSignature(resolveResult) {
     const r = Buffer.from(signature.r, 'hex');
     const s = Buffer.from(signature.s, 'hex');
     const recovered = ecrecover(hash, signature.v, r, s);
-    return 'Mp' + recovered.toString('hex') === MNS_PUBLIC_KEY;
+    return 'Np' + recovered.toString('hex') === MNS_PUBLIC_KEY;
 }
 
 /**
