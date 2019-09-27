@@ -32,14 +32,14 @@ describe('wallet page', () => {
 
     test('has address, has balance', async () => {
         const balance = await page.$eval('[data-test-id="walletBalanceValue"]', (el) => el.textContent);
-        expect(address.substring(0, 2)).toBe('Mx');
+        expect(address.substring(0, 2)).toBe('NOAHx');
         expect(address).toHaveLength(42);
         expect(parseFloat(balance)).toBeGreaterThan(0);
     });
 
     test('has transactions', async () => {
         const txHref = await page.$eval('[data-test-id="walletTxHash"]', (el) => el.getAttribute('href'));
-        const txHashIndex = txHref.indexOf('/Mt') + 1;
+        const txHashIndex = txHref.indexOf('/Nt') + 1;
         const txHash = txHref.substr(txHashIndex);
         expect(txHash).toHaveLength(66);
     });

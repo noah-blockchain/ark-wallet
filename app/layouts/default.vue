@@ -171,7 +171,7 @@
         computed: {
             username() {
                 const username = this.$store.getters.username;
-                return username.substr(0, 2) === 'Mx' ? shortHashFilter(username, 4) : username;
+                return username.substr(0, 2) === 'NOAHx' ? shortHashFilter(username, 4) : username;
             },
             isTestnet() {
                 return NETWORK === TESTNET;
