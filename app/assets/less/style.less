@@ -10,7 +10,7 @@
 @import "include/modal";
 
 body {
-    background: rgba(0,0,0,0);
+    background: #E5E5E5;
 }
 
 // vendor
@@ -70,12 +70,15 @@ body {
 }
 .main-content--grid {}
 .main-content__aside {
-    position: absolute; z-index: 2; /* higher than input buttons */ top: @header-height; min-height: calc(100% - @header-height); overflow: auto; background: #fff;}
+    position: absolute; z-index: 2; /* higher than input buttons */ top: @header-height; min-height: calc(100% - @header-height); overflow: auto; background: #fff;
+    margin-top: -3px;
+}
 .main-content__aside-section {padding-top: 24px; padding-bottom: 24px;}
 
 @media (min-width: @breakpoint-medium-up) {
     .main-content--grid {display: flex;}
-    .main-content__aside {width: 256px; flex-shrink: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: static; overflow: visible;}
+    .main-content__aside {width: 256px; flex-shrink: 0;
+        position: static; overflow: visible;}
     .main-content__main {flex-grow: 2; width: calc(100% - 256px);}
 }
 .u-icon-wrap {display: flex; align-items: center;}
@@ -94,7 +97,9 @@ body {
 .page-enter, .page-leave-to, .layout-enter, .layout-leave-to {opacity: 0;}
 // common panel
 .panel {
-    background: #fff; color: @c-black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff; color: @c-black;
+    border-radius: 10px;
     &+& {margin-top: @grid-vertical-margin;}
 }
 .panel__section, .panel__header {
@@ -174,7 +179,10 @@ body {
 
 
 
-.menu__link {display: inline-flex; align-items: center; font-weight: 700; text-transform: uppercase; vertical-align: top;}
+.menu__link {
+    display: inline-flex; align-items: center; font-weight:500; vertical-align: top;
+    color: #6D6D6D;
+}
 .menu__icon {width: 28px; height: 28px; flex-shrink: 0; margin-right: 12px;}
 .menu__user {display: flex; align-items: center;}
 .menu__user-link {flex-grow: 2;}
@@ -305,3 +313,29 @@ body {
     background: rgba(0,0,0,0);
 }
 
+.u-icon--copy--right, .u-icon--qr--right {
+    width: 48px;
+    margin-right: 0;
+}
+.panel {
+    box-shadow: none!important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.menu__item {
+    padding-left: 10px  !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px  !important;
+    margin-left: 20px  !important;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    a {
+        text-decoration: none !important;
+    }
+}
+.menu__item:hover {
+    background: #F1F1F1;
+}
