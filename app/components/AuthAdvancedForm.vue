@@ -9,7 +9,7 @@
                               v-model.trim="mnemonic"
                               @blur="$v.mnemonic.$touch()"
                     ></textarea>
-                    <span class="form-field__label">{{ $td('Your seed phrase', 'index.auth-sign-in-seed-text') }}</span>
+                    <span class="form-field__label">{{ $td('Your seed phrase or private key', 'index.auth-sign-in-seed-text') }}</span>
                 </label>
                 <label v-else class="form-field">
                     <textarea class="form-field__input" rows="1" autocapitalize="off" spellcheck="false" v-check-empty
@@ -99,8 +99,7 @@
                         if (isValidMnemonic(mnemonic)) {
                             this.$store.commit('SET_AUTH_ADVANCED', mnemonic);
                         }
-                    }).catch((err) => {
-                    })
+                    }).catch((err) => {})
                 }
             },
             addAddress() {

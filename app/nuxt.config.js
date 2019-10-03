@@ -50,14 +50,16 @@ const imageCSP = prepareCSP(envConfigParsed, (item) => {
 export default {
     /*
     ** Headers of the page
+    *  default-src 'self' ${connectCSP};
     */
+
     head: {
         title: BASE_TITLE,
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { 'http-equiv': 'Content-Security-Policy', content: `
-                    default-src 'self' ${connectCSP};
+                     default-src 'self' *;
                     script-src 'self' 'sha256-${NUXT_LOADING_INLINE_SCRIPT_SHA}' 'unsafe-eval';
                     style-src 'self' 'unsafe-inline';
                     img-src 'self' ${imageCSP} data:;
