@@ -125,9 +125,10 @@
             let currency = localStorage.getItem('currency');
             if (currency === null) currency = 'NOAH';
             this.currency = currency;
-            const baseCoin = this.$store.state.balance.find((coinItem) => (coinItem.coin === 'MNT'));
+            const baseCoin = this.$store.state.balance.find((coinItem) => (coinItem.coin === 'NOAH'));
             const rate_result = await rate(baseCoin ? baseCoin.amount : 0 | pretty);
             this.balance = rate_result[currency];
+
         },
         computed: {
             ...mapGetters([
