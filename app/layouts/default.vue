@@ -109,28 +109,28 @@
 <!--                                <a class="services__link link&#45;&#45;hover" href="https://help.noah-blockchain.com"-->
 <!--                                   target="_blank">Help/FAQ</a>-->
 <!--                            </li>-->
-                            <li class="menu__item u-cell">
-                                <nuxt-link class="menu__link link--hover" :to="preferredPath('delegation')"
+                            <a  href="https://app.swaggerhub.com/apis/noah-blockchain/noah-explorer_api/0.0.1" target="_blank"  class="menu__item u-cell">
+                                <a href="https://app.swaggerhub.com/apis/noah-blockchain/noah-explorer_api/0.0.1"
+                                   target="_blank" class="menu__link link--hover" :to="preferredPath('delegation')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/api.svg" alt="" role="presentation">
                                     {{ $td('API', 'common.page-api') }}
-                                </nuxt-link>
-                            </li>
-
-                            <li class="menu__item u-cell">
-                                <nuxt-link class="menu__link link--hover" :to="preferredPath('masternode')"
+                                </a>
+                            </a>
+                            <a  href="http://explorer.tesntet.noah-blockchain.com/" target="_blank" class="menu__item u-cell">
+                                <a class="menu__link link--hover" :to="preferredPath('masternode')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/explorer.svg" alt="" role="presentation">
                                     {{ $td('Explorer', 'common.page-explorer') }}
-                                </nuxt-link>
-                            </li>
-                            <li class="menu__item u-cell">
-                                <nuxt-link class="menu__link link--hover" :to="preferredPath('coiner')"
+                                </a>
+                            </a>
+                            <a  href="http://faq.tesntet.noah-blockchain.com/" target="_blank" class="menu__item u-cell">
+                                <a  class="menu__link link--hover" :to="preferredPath('coiner')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/faq.svg" alt="" role="presentation">
                                     {{ $td('Help/Faq', 'common.page-faq') }}
-                                </nuxt-link>
-                            </li>
+                                </a>
+                            </a>
                         </menu>
                     </div>
                 </aside>
