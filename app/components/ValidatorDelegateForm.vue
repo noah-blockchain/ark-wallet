@@ -216,6 +216,7 @@
                         gasPrice: this.form.gasPrice || undefined,
                     })))
                     .then((txHash) => {
+                        console.log(txHash);
                         this.isFormSending = false;
                         this.serverSuccess = txHash;
                         this.clearForm();

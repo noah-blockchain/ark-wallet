@@ -15,7 +15,7 @@ import {EXPLORER_HOST} from "~/assets/variables";
  * @return {string}
  */
 export function getNameLetter(name) {
-    return name && name.replace(/^@/, '').replace(/^Mx/, '')[0];
+    return name && name.replace(/^@/, '').replace(/^NOAHx/, '')[0];
 }
 
 export function removeEmptyKeys(obj) {
