@@ -229,6 +229,28 @@ function makeFormData(data) {
 
     return formData;
 }
+/**
+ * @return {Promise<Array<Validator>>}
+ */
+export function getValidatorList() {
+    return explorer.get(`validators`)
+        .then((response) => response.data.data.sort((a, b) => {
+            // Sort by stake descending
+            return Number(b.stake) >= Number(a.stake);
+        }));
+}
+
+/**
+ * @param {string} address
+ * @return {Promise<Array<StakeItem>>}
+ */
+export function getAddressStakeList(address) {
+    return explorer.get(`addresses/${address}/delegations`)
+        .then((response) => response.data.data);
+}
+
+
+
 
 // @TODO all addresses from server should be serverSecured
 function markSecured(address) {

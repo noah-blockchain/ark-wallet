@@ -12,10 +12,10 @@
                     <span class="form-field__label">{{ $td('Your seed phrase or private key', 'index.auth-sign-in-seed-text') }}</span>
                 </label>
                 <label v-else class="form-field">
-                    <textarea class="form-field__input" rows="1" autocapitalize="off" spellcheck="false" v-check-empty
+                    <input type="password" class="form-field__input" rows="1" autocapitalize="off" spellcheck="false" v-check-empty
                               v-autosize data-test-id="authAdvancedLoginInputMnemonic"
                               v-model.trim="password"
-                    ></textarea>
+                    />
                     <span class="form-field__label">{{ $td('Your password for keystore', 'index.auth-sign-in-seed-text') }}</span>
                 </label>
                 <span class="form-field__error"

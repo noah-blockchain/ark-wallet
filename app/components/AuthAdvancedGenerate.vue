@@ -11,11 +11,11 @@
                 </button>
             </div>
             <div  class="u-cell" v-if="keystore_step === 1">
-                 <textarea
+                 <input type="password"
                      placeholder="Enter a strong password for keystore"
                      class="form-field__input" rows="1" autocapitalize="off" spellcheck="false" v-check-empty v-autosize data-test-id="authAdvancedRegisterGenerateInput"
                            v-model.trim="password"
-                 ></textarea>
+                 />
                 <button class="button button-generate button--main button--full"
                         data-test-id="authAdvancedRegisterGenerateButton" @click="generate_keystore">
                     {{ $td('Generate', 'index.auth-sign-up-keystore-generate') }}

@@ -1,4 +1,4 @@
-import {getBalance, getProfile, getProfileAddressEncrypted, getCoinList} from "~/api";
+import {getBalance, getProfile, getProfileAddressEncrypted, getAddressStakeList, getValidatorList, getCoinList} from "~/api";
 // import explorer from "~/api/explorer";
 
 let activeCoinListPromise;
@@ -21,6 +21,21 @@ export default {
         return getProfileAddressEncrypted(state.user.mainAddress.id)
             .then((address) => commit('SET_PROFILE_ADDRESS', address));
     },
+    FETCH_STAKE_LIST: ({ commit, getters }) => {
+        return getAddressStakeList(getters.address)
+            .then((stakeList) => {
+                commit('SET_STAKE_LIST', stakeList);
+                return stakeList;
+            });
+    },
+    FETCH_VALIDATOR_LIST({ commit }) {
+        return getValidatorList()
+            .then((validatorList) => {
+                commit('SET_VALIDATOR_LIST', validatorList);
+                return validatorList;
+            });
+    },
+
     // FETCH_PROFILE_ADDRESS_LIST: ({ commit, getters }) => {
     //     if (getters.isUserWithProfile) {
     //         return getProfileAddressList().then((addressList) => {

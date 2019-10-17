@@ -53,6 +53,12 @@ export default {
     SET_SNACKBAR_INACTIVE(state) {
         state.isSnackbarActive = false;
     },
+    SET_STAKE_LIST: (state, stakeList) => {
+        state.stakeList = stakeList;
+    },
+    SET_VALIDATOR_LIST(state, validatorList) {
+        state.validatorList = validatorList;
+    },
 };
 
 function LOGOUT(state) {
