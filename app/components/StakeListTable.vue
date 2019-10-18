@@ -46,7 +46,6 @@
 
                     <span :title="prettyPrecise(stakeItem.value)">{{ stakeItem.value | pretty }}</span>
 
-                    <div class="u-text-muted" :title="prettyPrecise(stakeItem.bip_value)" v-if="stakeItem.coin !== $store.getters.COIN_NAME">{{ $store.getters.COIN_NAME }} {{ stakeItem.bip_value  }}</div>
                 </td>
             </tr>
             </tbody>
