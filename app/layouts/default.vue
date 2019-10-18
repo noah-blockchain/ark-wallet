@@ -80,7 +80,7 @@
                                     <span class="menu__user-name">{{$td('Buy coin', 'common.page-buy') }}</span>
                                 </a>
                             </a>
-                            <li class="menu__item menu__user u-cell">
+                            <nuxt-link :to="preferredPath('account')" class="menu__item menu__user u-cell">
                                 <nuxt-link class="menu__link menu__user-link link--hover text-uppercase" :to="preferredPath('account')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/user.svg" alt="" role="presentation">
@@ -92,7 +92,7 @@
                                     <img class="" src="/img/icon-auth-logout-menu.svg" width="28" height="28"
                                          alt="Logout">
                                 </button>
-                            </li>
+                            </nuxt-link>
                         </menu>
                     </div>
                     <hr>

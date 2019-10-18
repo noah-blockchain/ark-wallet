@@ -66,7 +66,7 @@ export function getExplorerTxUrl(hash) {
 }
 
 export function getExplorerAddressUrl(address) {
-    return EXPLORER_HOST + '/address/' + address;
+    return EXPLORER_HOST + '/wallets/' + address;
 }
 
 export function getExplorerValidatorUrl(pubKey) {
