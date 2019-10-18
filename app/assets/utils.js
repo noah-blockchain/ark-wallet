@@ -70,7 +70,8 @@ export function getExplorerAddressUrl(address) {
 }
 
 export function getExplorerValidatorUrl(pubKey) {
-    return EXPLORER_HOST + '/validator/' + pubKey;
+    // return EXPLORER_HOST + '/validator/' + pubKey;
+    return EXPLORER_HOST;
 }
 
 /**
