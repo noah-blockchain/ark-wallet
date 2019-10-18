@@ -24,23 +24,23 @@
                 title: {
                     en: 'Ark wallet ',
                 },
-                url: 'http://wallet.testnet.noah-blockchain.com/',
-                urlTestnet: 'http://wallet.testnet.noah-blockchain.com/',
+                url: 'http://ark-wallet.testnet.noah-blockchain.com/',
+                urlTestnet: 'http://ark-wallet.testnet.noah-blockchain.com/',
             },
             {
                 slug: 'explorer',
                 title: {
                     en: 'Explorer',
                 },
-                url: 'http://explorer.tesntet.noah-blockchain.com/',
-                urlTestnet: 'http://explorer.tesntet.noah-blockchain.com/',
+                url: 'http://explorer.testnet.noah-blockchain.com',
+                urlTestnet: 'http://explorer.testnet.noah-blockchain.com',
             },
             {
                 slug: 'docs',
                 title: {
                     en: 'Docs',
                 },
-                url: 'http://dock.noah-blockchain.com/',
+                url: 'http://docs.noah-blockchain.com',
             },
         ],
         props: {

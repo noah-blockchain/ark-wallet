@@ -4,7 +4,7 @@
             <div class="header__container u-container u-container--large">
                 <nuxt-link class="header__logo no-link" :to="preferredPath('index')">
                     <img class="header__logo-image" src="/img/noah-logo-circle.svg" alt="Noah" width="42" height="42">
-                    <div class="header__logo-text">{{ $store.state.sectionName || `ARK web wallet` }}</div>
+                    <div class="header__logo-text">{{ $store.state.sectionName || `Ark Web wallet` }}</div>
                 </nuxt-link>
 
                 <div class="header__controls">
@@ -117,14 +117,14 @@
                                     {{ $td('API', 'common.page-api') }}
                                 </a>
                             </a>
-                            <a  href="http://explorer.tesntet.noah-blockchain.com/" target="_blank" class="menu__item u-cell">
+                            <a  href="http://explorer.testnet.noah-blockchain.com" target="_blank" class="menu__item u-cell">
                                 <a class="menu__link link--hover" :to="preferredPath('masternode')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/explorer.svg" alt="" role="presentation">
                                     {{ $td('Explorer', 'common.page-explorer') }}
                                 </a>
                             </a>
-                            <a  href="http://faq.tesntet.noah-blockchain.com/" target="_blank" class="menu__item u-cell">
+                            <a  href="http://faq.noah-blockchain.com" target="_blank" class="menu__item u-cell">
                                 <a  class="menu__link link--hover" :to="preferredPath('coiner')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/faq.svg" alt="" role="presentation">
