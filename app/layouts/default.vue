@@ -34,43 +34,44 @@
                 <aside class="main-content__aside" v-show="isMenuActive || isDesktop">
                     <div class="u-container main-content__aside-section">
                         <menu class="menu no-list u-grid u-grid--vertical-margin--small">
-                            <li class="menu__item u-cell">
+                            <nuxt-link class="menu__item u-cell" :to="preferredPath('portfolio')">
                                 <nuxt-link class="menu__link link--hover text-uppercase" :to="preferredPath('portfolio')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/wallet.svg" alt="" role="presentation">
                                     {{ $td('Portfolio', 'common.page-wallet') }}
                                 </nuxt-link>
-                            </li>
-                            <li class="menu__item u-cell">
+                            </nuxt-link>
+                            <nuxt-link class="menu__item u-cell" :to="preferredPath('exchange')">
                                 <nuxt-link class="menu__link link--hover text-uppercase" :to="preferredPath('exchange')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/transfer.svg" alt="" role="presentation">
                                     {{ $td('Exchange', 'common.page-convert') }}
                                 </nuxt-link>
-                            </li>
-                            <li class="menu__item u-cell">
+                            </nuxt-link>
+                            <nuxt-link class="menu__item u-cell" :to="preferredPath('delegation')">
                                 <nuxt-link class="menu__link link--hover text-uppercase" :to="preferredPath('delegation')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/court.svg" alt="" role="presentation">
                                     {{ $td('Delegation', 'common.page-delegation') }}
                                 </nuxt-link>
-                            </li>
+                            </nuxt-link>
 
-                            <li class="menu__item u-cell">
+                            <nuxt-link :to="preferredPath('masternode')" class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover text-uppercase" :to="preferredPath('masternode')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/blockchain.svg" alt="" role="presentation">
                                     {{ $td('Masternode', 'common.page-masternode') }}
                                 </nuxt-link>
-                            </li>
-                            <li class="menu__item u-cell">
+                            </nuxt-link>
+                            <nuxt-link  :to="preferredPath('coiner')" class="menu__item u-cell">
                                 <nuxt-link class="menu__link link--hover text-uppercase" :to="preferredPath('coiner')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/coins.svg" alt="" role="presentation">
                                     {{ $td('Coiner', 'common.page-coiner') }}
                                 </nuxt-link>
-                            </li>
-                            <li class="menu__item menu__user u-cell">
+                            </nuxt-link>
+                            <a target="_blank"
+                               href="https://www.btcnext.io/"  class="menu__item menu__user u-cell">
                                 <a
                                     target="_blank"
                                     href="https://www.btcnext.io/" class="menu__link menu__user-link link--hover text-uppercase"
@@ -78,7 +79,7 @@
                                     <img class="menu__icon" src="/img/buy.svg" alt="" role="presentation">
                                     <span class="menu__user-name">{{$td('Buy coin', 'common.page-buy') }}</span>
                                 </a>
-                            </li>
+                            </a>
                             <li class="menu__item menu__user u-cell">
                                 <nuxt-link class="menu__link menu__user-link link--hover text-uppercase" :to="preferredPath('account')"
                                            @click.native="linkClick">
