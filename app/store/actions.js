@@ -1,12 +1,9 @@
 import {getBalance, getProfile, getProfileAddressEncrypted, getAddressStakeList, getValidatorList, getCoinList} from "~/api";
-// import explorer from "~/api/explorer";
-
 let activeCoinListPromise;
 let coinListTime = 0;
 
 export default {
     FETCH_PROFILE: ({ state, commit }) => {
-        // don't fetch more often than 10s
         if (Date.now() - state.userTimeStamp < 10000) {
             return Promise.resolve();
         }

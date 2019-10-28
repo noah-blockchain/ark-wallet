@@ -16,13 +16,13 @@ export default function({app, store, route, redirect, error}) {
         /^(\/ru)?\/masternode(\/|$)/,
         /^(\/ru)?\/pco(\/|$)/,
         /^(\/ru)?\/support(\/|$)/,
-        /^(\/ru)?\/wallet(\/|$)/,
+        /^(\/ru)?\/portfolio(\/|$)/,
     ].some((pathRegex) => {
         return pathRegex.test(route.path);
     });
 
     const urlAllowsNonAuth = [
-        /^(\/ru)?\/profile\/confirm/,
+        /^(\/ru)?\/confirm/,
     ].some((pathRegex) => {
         return pathRegex.test(route.path);
     });
@@ -33,11 +33,10 @@ export default function({app, store, route, redirect, error}) {
     // ].some((pathRegex) => {
     //     return pathRegex.test(route.path);
     // });
+    // console.log(store.getters.isAuthorized, urlRequiresAuth, urlAllowsNonAuth)
 
-
-    if (!store.getters.isAuthorized && urlRequiresAuth && !urlAllowsNonAuth) {
-        console.log('-- restricted: redirect to auth');
-        return redirect(app.preferredPath('index'));
+    if (!store.getters.isAuthorized && urlRequiresAuth) {
+        return  redirect('/');
     }
     // if (store.getters.isAuthorized && urlRequiresNonAuth) {
     //     console.log('-- restricted: redirect to index');
