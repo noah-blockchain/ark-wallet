@@ -1,5 +1,12 @@
 <template>
     <section class="u-section u-container">
+        <div class="faucet-container" v-if="balance < 1">
+            You can get noah test tokens by  clicking on the link
+            <a class="link--default u-semantic-button" href="http://faucet-noah-testnet.herokuapp.com/" target="_blank">
+                Get 10000 Noah
+
+            </a>
+        </div>
         <div class="panel panel__header wallet__info">
             <div class="wallet__address">
                 <img class="wallet__address-icon u-hidden-small-down" src="/img/icon-wallet-white.svg" width="40"
