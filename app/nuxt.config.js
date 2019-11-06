@@ -6,6 +6,8 @@ const envConfig = dotenv.config();
 const envConfigParsed = envConfig.error ? {} : envConfig.parsed;
 
 import langEn from './lang/en';
+import langJp from './lang/jp';
+
 import {BASE_TITLE, BASE_DESCRIPTION, I18N_ROUTE_NAME_SEPARATOR, LANGUAGE_COOKIE_KEY} from "./assets/variables";
 
 const NUXT_LOADING_INLINE_SCRIPT_SHA = process.env.NODE_ENV === 'production' ? 'tempUn1btibnrWwQxEk37lMGV1Nf8FO/GXxNhLEsPdg=' : 'boxyvYX4ButGhwNqfdpXtx/7RJdIvBO4KMxG+v2zKFo=';
@@ -116,6 +118,11 @@ export default {
                     iso: 'en',
                     name: 'English',
                 },
+                {
+                    code: 'jp',
+                    iso: 'jp',
+                    name: 'Japanese',
+                }
             ],
             defaultLocale: 'en',
             routesNameSeparator: I18N_ROUTE_NAME_SEPARATOR,
@@ -125,6 +132,7 @@ export default {
                 fallbackLocale: 'en',
                 messages: {
                     en: langEn,
+                    jp: langJp
                 },
             },
             seo: false,

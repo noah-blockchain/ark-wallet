@@ -75,7 +75,7 @@
                                 <a
                                     target="_blank"
                                     href="https://www.btcnext.io/" class="menu__link menu__user-link link--hover text-uppercase"
-                                    :to="preferredPath('account')" @click.native="linkClick">
+                                    @click.native="linkClick">
                                     <img class="menu__icon" src="/img/buy.svg" alt="" role="presentation">
                                     <span class="menu__user-name">{{$td('Buy coin', 'common.page-buy') }}</span>
                                 </a>

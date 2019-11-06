@@ -9,6 +9,7 @@
                 slug: 'intro',
                 title: {
                     en: 'Intro',
+                    jp: "プロジェクト情報"
                 },
                 url: 'https://noahcoin.org/',
             },
@@ -16,6 +17,7 @@
                 slug: 'network',
                 title: {
                     en: 'Network',
+                    jp: "ネットワーク"
                 },
                 url: 'http://testnet.noah-blockchain.com/',
             },
@@ -23,6 +25,7 @@
                 slug: 'console',
                 title: {
                     en: 'Ark wallet ',
+                    jp: "ARKウォレット"
                 },
                 url: 'http://ark-wallet.testnet.noah-blockchain.com/',
                 urlTestnet: 'http://ark-wallet.testnet.noah-blockchain.com/',
@@ -31,6 +34,7 @@
                 slug: 'explorer',
                 title: {
                     en: 'Explorer',
+                    jp: "エクスプローラー"
                 },
                 url: 'http://explorer.testnet.noah-blockchain.com',
                 urlTestnet: 'http://explorer.testnet.noah-blockchain.com',
@@ -39,6 +43,7 @@
                 slug: 'docs',
                 title: {
                     en: 'Docs',
+                    jp: "ドキュメント"
                 },
                 url: 'http://docs.noah-blockchain.com',
             },

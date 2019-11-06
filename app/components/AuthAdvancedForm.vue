@@ -35,7 +35,7 @@
             <div class="u-cell" v-if="file === null">
                 <input type="file" class="file-picker" ref="file" accept=".noah" v-on:change="handleFileUpload()"/>
                 <button class="button button--main button--full" data-test-id="authAdvancedLoginSubmitButton">{{
-                    $td('Sign In with keystore', 'index.auth-sign-in-seed-button') }}
+                    $td('Sign In with keystore',  'index.auth-sign-in-key-button') }}
                 </button>
             </div>
             <div class="u-cell" v-else>
