@@ -7,12 +7,6 @@
                 </h1>
             </div>
             <dl class="dl--table">
-                <dt v-if="username">{{ $td('Username:', 'account.username') }}</dt>
-                <dd v-if="username">@{{ username }}</dd>
-
-                <dt v-if="email">{{ $td('Email:', 'account.email') }}</dt>
-                <dd v-if="email">{{ email }}</dd>
-
                 <dt>{{ $td('Address:', 'account.address') }}</dt>
                 <dd class="u-icon-wrap">
                     <a class="link--default u-icon-text" :href="addressUrl" target="_blank">{{ isDesktop ? address : shortAddress(address) }}</a>

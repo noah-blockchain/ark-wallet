@@ -194,10 +194,13 @@
                 </div>
             </div>
             <br>
-
-            <!--@see https://github.com/noah-blockchain/noah-go-node/blob/master/core/transaction/create_coin.go#L93-->
             <template v-if="$i18n.locale === 'en'">
-                <p>Note: coin will be deleted if reserve is less than {{$store.getters.COIN_NAME}} {{$options.MIN_DESTROY_RESERVE}}, OR price is less than {{$store.getters.COIN_NAME}} {{$options.MIN_PRICE}}, OR volume is less than {{$options.MIN_SUPPLY}} coin</p>
+                <p>Note: coin will be deleted if reserve is less than {{$store.getters.COIN_NAME}}
+                    {{$options.MIN_DESTROY_RESERVE}}, OR price is less than
+                    {{$store.getters.COIN_NAME}} {{$options.MIN_PRICE}}, OR volume is less than
+                    {{$options.MIN_SUPPLY}}
+                    coin
+                </p>
                 <p>Ticker Symbol Fees:</p>
                 <p>
                     3 letters — NOAH 1 000 000<br>
@@ -205,6 +208,19 @@
                     5 letters — NOAH 10 000<br>
                     6 letters — NOAH 1 000<br>
                     7-10 letters — NOAH 100<br>
+                </p>
+            </template>
+            <template v-if="$i18n.locale === 'jp'">
+                <p>
+                    注意：準備金が 100NOAH未満、または価格が 0.0001NOAH未満、またはボリュームが1コイン未満の場合、コインは削除されます。
+                </p>
+                <p>ティッカーシンボルの料金：</p>
+                <p>
+                    3文字－1,000,000 NOAH <br>
+                    4文字－100,000 NOAH <br>
+                    5文字－10,000 NOAH <br>
+                    6文字－1000 NOAH <br>
+                    7～10文字－100 NOAH<br>
                 </p>
             </template>
         </div>

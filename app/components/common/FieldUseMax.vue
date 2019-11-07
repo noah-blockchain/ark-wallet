@@ -70,7 +70,9 @@
             @input.native="handleInput"
             @blur="$value.$touch()"
         />
-        <button class="form-field__use-max link--main link--opacity u-semantic-button" type="button" @click="useMax" v-if="isMaxValueDefined">Use max</button>
+        <button class="form-field__use-max link--main link--opacity u-semantic-button" type="button" @click="useMax" v-if="isMaxValueDefined">
+            {{$td('Use max', 'form.use-max')}}
+        </button>
         <span class="form-field__label">{{ label }}</span>
     </label>
 </template>
