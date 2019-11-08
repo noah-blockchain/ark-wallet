@@ -6,7 +6,7 @@ export const BASE_TITLE_END = ' — NOAH';
 export const BASE_TITLE = BASE_TITLE_NETWORK + 'Ark wallet';
 export const BASE_DESCRIPTION = `Noah Console is by far the most advanced part of our project that lets you manage all your activities on our ${NETWORK === TESTNET ? 'test ' : ''}network.`;
 export const COIN_NAME = NETWORK === MAINNET ? 'NOAH' : 'NOAH';
-export const CHAIN_ID = 1;
+export const CHAIN_ID = 2;
 export const ACCOUNTS_API_URL = process.env.APP_ACCOUNTS_API_URL;
 export const GATE_API_URL = process.env.APP_GATE_API_URL;
 export const AUTO_DELEGATION_API_URL = process.env.APP_AUTO_DELEGATION_API_URL;
