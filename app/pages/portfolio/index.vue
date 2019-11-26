@@ -35,7 +35,10 @@
             </div>
         </div>
         <CoinSendForm/>
+        <div class="charts-panel panel">
 
+            <ChartContainer/>
+        </div>
         <CoinList/>
 
         <TransactionLatestList :tx-list="txList" v-if="txList.length"/>
@@ -63,9 +66,11 @@
     import CoinSendForm from '~/components/CoinSendForm';
     import CoinList from '~/components/CoinList';
     import TransactionLatestList from '~/components/TransactionLatestList';
+    import ChartContainer from '~/components/ChartContainer'
     import {isDesktop} from "../../utils/checker";
     import {shortAddress} from "../../utils/text";
     import {rate} from "../../utils/rates";
+
 
     function getAddressLatestTransactionList(address) {
         return getAddressTransactionList(address, {limit: 5});
@@ -81,6 +86,7 @@
             CoinSendForm,
             CoinList,
             TransactionLatestList,
+            ChartContainer
         },
         filters: {
             pretty,
