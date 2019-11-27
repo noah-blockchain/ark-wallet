@@ -9,6 +9,9 @@
     let stakeInterval;
 
     export default {
+        data: () => ({
+            sortedStackList
+        }),
         components: {
             StakeListTable,
             ValidatorDelegateForm,

@@ -34,11 +34,11 @@
                 </div>
             </div>
         </div>
-        <CoinSendForm/>
         <div class="charts-panel panel">
 
             <ChartContainer/>
         </div>
+        <CoinSendForm/>
         <CoinList/>
 
         <TransactionLatestList :tx-list="txList" v-if="txList.length"/>

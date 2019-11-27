@@ -163,6 +163,7 @@
                         this.sort[key] = 0;
                     }
                 });
+                console.log(this.sort)
                 const step = inverseDirection ? -1 : 1;
                 // change field sort order between -1 and 1
                 if (this.sort[field] === 0) {
@@ -217,7 +218,7 @@
      * Default ascending: 1 -> 2
      */
     function valueSortFn(a, b) {
-        return a.bip_value - b.bip_value;
+        return a.noah_value - b.noah_value;
     }
 
 
