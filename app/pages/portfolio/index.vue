@@ -30,7 +30,7 @@
             <div class="wallet__balance" v-if="!$store.getters.isOfflineMode">
                 <div>{{ $td('Your balance:', 'wallet.balance') }}</div>
                 <div class="wallet__value" data-test-id="walletBalanceValue">
-                    {{ balance }} {{ currency }}
+                    {{ numberWithCommas(Number(balance).toFixed(2)) }} {{ currency }}
                 </div>
             </div>
         </div>
@@ -70,6 +70,7 @@
     import {isDesktop} from "../../utils/checker";
     import {shortAddress} from "../../utils/text";
     import {rate} from "../../utils/rates";
+    import {numberWithCommas} from "../../utils/number";
 
 
     function getAddressLatestTransactionList(address) {
@@ -131,7 +132,8 @@
                 txList: [],
                 isAddressQrModalVisible: false,
                 balance: '...',
-                currency: '...'
+                currency: '...',
+                numberWithCommas
             };
         },
         async mounted() {
