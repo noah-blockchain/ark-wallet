@@ -179,7 +179,7 @@
                             <TableLink :link-text="tx.block" :link-path="getExplorerBlockUrl(tx.block)" :should-not-shorten="true"/>
                         </td>
                         <!-- time -->
-                        <td class="u-hidden-xlarge-down">{{ tx.timestamp | time }}</td>
+                        <td class="u-hidden-xlarge-down">{{ tx.created_at | time }}</td>
                         <!-- from -->
                         <td class="u-hidden-xlarge-down">
                             <TableLink :link-text="tx.from"
@@ -336,7 +336,7 @@
                                 <!-- time -->
                                 <div class="table__inner-item u-hidden-xlarge-up">
                                     <strong>{{ $td('TimeStamp', 'wallet.tx-table-time') }} ({{ timeZone}})</strong> <br>
-                                    {{ tx.timestamp | time }}
+                                    {{ tx.created_at | time }}
                                 </div>
 
                                 <!-- fee -->
