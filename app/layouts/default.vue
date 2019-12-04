@@ -34,12 +34,13 @@
                 <aside class="main-content__aside" v-show="isMenuActive || isDesktop">
                     <div class="u-container main-content__aside-section">
                         <menu class="menu no-list u-grid u-grid--vertical-margin--small">
-                            <nuxt-link class="menu__item u-cell" :to="preferredPath('portfolio')">
+                            <nuxt-link class="menu__item menu__user menu__lang u-cell" :to="preferredPath('portfolio')">
                                 <nuxt-link class="menu__link link--hover text-uppercase" :to="preferredPath('portfolio')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/wallet.svg" alt="" role="presentation">
                                     {{ $td('Portfolio', 'common.page-wallet') }}
                                 </nuxt-link>
+                                <Language/>
                             </nuxt-link>
                             <nuxt-link class="menu__item u-cell" :to="preferredPath('exchange')">
                                 <nuxt-link class="menu__link link--hover text-uppercase" :to="preferredPath('exchange')"

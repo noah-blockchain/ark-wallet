@@ -8,7 +8,7 @@
     "prod": "npm run production",
     "production": "npm run build",
     "postinstall": "gulp once && nuxt build --spa",
-    "dev": "gulp & nuxt --spa --port=3000",
+    "dev": "gulp & nuxt --spa --port=3000 ",
     "build": "gulp once && nuxt build --spa",
     "start": "nuxt start --spa --host=0.0.0.0",
     "generate": "gulp once && nuxt generate --fail-on-error",
