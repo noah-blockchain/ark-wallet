@@ -71,7 +71,7 @@ export function getExplorerAddressUrl(address) {
 
 export function getExplorerValidatorUrl(pubKey) {
     // return EXPLORER_HOST + '/validator/' + pubKey;
-    return EXPLORER_HOST;
+    return EXPLORER_HOST + '/validators/' + pubKey;
 }
 
 /**
