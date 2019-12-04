@@ -40,7 +40,9 @@
                                     <img class="menu__icon" src="/img/wallet.svg" alt="" role="presentation">
                                     {{ $td('Portfolio', 'common.page-wallet') }}
                                 </nuxt-link>
-                                <Language/>
+                                <div class="lang-mobile">
+                                    <Language/>
+                                </div>
                             </nuxt-link>
                             <nuxt-link class="menu__item u-cell" :to="preferredPath('exchange')">
                                 <nuxt-link class="menu__link link--hover text-uppercase" :to="preferredPath('exchange')"
