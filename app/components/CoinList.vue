@@ -51,7 +51,8 @@
                     <!-- @TODO coin.name -->
                     <td>
                         <img class="wallet__coin-icon" :src="getCoinIconUrl(coinItem.coin)" width="28" height="28" alt="" role="presentation">
-                        <span class="wallet__coin-name">{{ coinItem.coin }}</span>
+                        <a
+                            :href="'http://explorer.testnet.noah-blockchain.com/coins/' + coinItem.coin" class="wallet__coin-name link--default">{{ coinItem.coin }}</a>
                     </td>
                     <!-- balance -->
                     <td>
