@@ -2,7 +2,7 @@
   "name": "noah-console-web",
   "version": "0.5.1",
   "description": "Noah Console Website",
-  "author": "shrpne <shrpne@gmail.com>",
+  "author": "Ark team",
   "private": true,
   "scripts": {
     "prod": "npm run production",
@@ -64,6 +64,7 @@
     "vue-chartjs": "^3.5.0",
     "vue-imask": "^5.2.0",
     "vue-inline-svg": "^1.1.2",
+    "vue-select": "^3.4.0",
     "vuelidate": "^0.7.4",
     "vuex-persistedstate": "^2.5.4"
   },
