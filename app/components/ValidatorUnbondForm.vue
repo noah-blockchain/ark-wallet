@@ -16,7 +16,7 @@
     import checkEmpty from '~/assets/v-check-empty';
     import {getErrorText} from "~/assets/server-error";
     import {getExplorerTxUrl, pretty, prettyExact} from "~/assets/utils";
-    import FieldDomain from '~/components/common/FieldDomain';
+    import FieldDomain from '~/components/common/FieldDomainValidator';
     import FieldQr from '~/components/common/FieldQr';
     import FieldCoinList from '~/components/common/FieldCoinList';
     import InputUppercase from '~/components/common/InputUppercase';
