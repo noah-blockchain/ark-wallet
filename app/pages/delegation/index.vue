@@ -53,17 +53,7 @@
 
 <template>
     <section class="u-section u-container">
-        <section class="panel" v-if="$store.state.stakeList.length && !$store.getters.isOfflineMode">
-            <div class="panel__header">
-                <h1 class="panel__header-title">
-                    {{ $td('Delegated Stakes', 'delegation.stake-list-title') }}
-                </h1>
-            </div>
-            <StakeListTable :stake-list="$store.state.stakeList" stake-item-type="validator"/>
-        </section>
-
-
-        <div class="panel">
+        <div class="panel" style="overflow: unset">
             <div class="panel__header">
                 <h1 class="panel__header-title">
                     {{ $td('Delegate', 'delegation.delegate-title') }}
@@ -74,7 +64,7 @@
             </div>
             <ValidatorDelegateForm/>
         </div>
-        <div class="panel">
+        <div class="panel" style="overflow: unset">
             <div class="panel__header">
                 <h1 class="panel__header-title">
                     {{ $td('Unbond', 'delegation.unbond-title') }}
@@ -85,7 +75,7 @@
             </div>
             <ValidatorUnbondForm/>
         </div>
-        <div class="panel">
+        <div class="panel" style="overflow: unset">
             <div class="panel__header">
                 <h1 class="panel__header-title">
                     {{ $td('Generate Delegation Transactions', 'delegation.reinvest-generate-title') }}
@@ -107,5 +97,14 @@
             </div>
             <ValidatorReinvestPostForm/>
         </div>
+        <section class="panel"  v-if="$store.state.stakeList.length && !$store.getters.isOfflineMode">
+            <div class="panel__header">
+                <h1 class="panel__header-title">
+                    {{ $td('Delegated Stakes', 'delegation.stake-list-title') }}
+                </h1>
+            </div>
+            <StakeListTable :stake-list="$store.state.stakeList" stake-item-type="validator"/>
+        </section>
+
     </section>
 </template>

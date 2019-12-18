@@ -11,7 +11,7 @@
     import checkEmpty from '~/assets/v-check-empty';
     import {getErrorText} from "~/assets/server-error";
     import {getExplorerTxUrl, pretty} from "~/assets/utils";
-    import FieldDomain from '~/components/common/FieldDomain';
+    import FieldDomain from '~/components/common/FieldDomainValidator';
     import FieldQr from '~/components/common/FieldQr';
     import InputMaskedAmount from '~/components/common/InputMaskedAmount';
     import InputMaskedInteger from '~/components/common/InputMaskedInteger';

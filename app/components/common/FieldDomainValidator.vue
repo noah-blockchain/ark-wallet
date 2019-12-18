@@ -1,47 +1,28 @@
 <template>
     <div>
-        <FieldQrSelect
-            v-bind="$attrs"
-            :value="domain ? domain : value"
-            @input="handleInput"
-            :$value="$value"
-            :label="label"
-            @blur="handleBlur"
-        />
-
-        <template v-if="valueType === $options.TYPE_ADDRESS && !$value.$pending">
-            <span class="form-field__error" v-if="$value.$dirty && !$value.required && !domain">
-                {{ $td('Enter address', 'form.wallet-send-address-error-required') }}
-            </span>
-            <span class="form-field__error" v-else-if="$value.$dirty && !$value.validAddress && !domain">
-                {{ $td('Address is invalid', 'form.wallet-send-address-error-invalid') }}
-            </span>
-            <span class="form-field__error" v-else-if="$value.$dirty && !$value.validAddress && domain">
-                {{ $td('Address not found for such domain', 'form.wallet-send-domain-error-invalid') }}
-            </span>
-        </template>
-
-        <template v-if="valueType === $options.TYPE_PUBLIC_KEY && !$value.$pending">
-            <span class="form-field__error" v-if="$value.$dirty && !$value.required && !domain">
-                {{ $td('Enter public key', 'form.masternode-public-error-required') }}
-            </span>
-            <span class="form-field__error" v-else-if="$value.$dirty && !$value.validPublicKey && !domain">
-                {{ $td('Public key is invalid', 'form.masternode-public-error-invalid') }}
-            </span>
-            <span class="form-field__error" v-else-if="$value.$dirty && !$value.validPublicKey && domain">
-                {{ $td('Public key not found for such domain', 'form.masternode-domain-error-invalid') }}
-            </span>
-        </template>
-
-        <div class="form-field__help" v-if="help">{{ help }}</div>
+        <v-select
+            placeholder="Select validator"
+            :clearable="false"
+            @input="inputChange"
+            label="public_key"
+            :value="shrinkString(value, 38)"
+            class="form-field__input" type="text" autocapitalize="off" spellcheck="false"
+            :options="$store.state.validatorList">
+            <template v-slot:option="option">
+                <div class="select-validator">
+                    <span class="public-name">{{ option.meta.name }}</span>
+                    <span class="public-select">{{ shrinkString(option.public_key, 42) }}</span>
+                    <span class="public-select-desc">Part: {{option.part}} Uptime: {{option.uptime}}</span>
+                </div>
+            </template>
+        </v-select>
     </div>
 </template>
 
 <script>
-    import {isValidAddress} from "noahjs-util/src/prefix";
-    import {isValidPublic} from "noahjs-util/src/public";
     import {ResolveDomain, isDomain, checkDomainSignature} from '~/api/mns';
     import FieldQrSelect from '~/components/common/FieldQrSelect';
+    import shrinkString from "../../utils/shrinkString";
 
     export default {
         ideFix: true,
@@ -79,49 +60,22 @@
         },
         data() {
             return {
+                shrinkString,
+
                 domain: this.value,
                 isResolving: 0,
                 mnsResolveDomain: ResolveDomain(),
             };
         },
+        mounted() {
+            this.$store.dispatch('FETCH_STAKE_LIST');
+        },
         methods: {
-            handleInput(inputValue) {
-                inputValue = inputValue.trim();
-                if (isDomain(inputValue)) {
-                    // instant resolve without throttle
-                    this.resolveDomain(inputValue, {throttle: true});
-                    this.$emit('input', '');
-                    this.$emit('update:domain', inputValue);
-                    this.domain = inputValue;
-                } else {
-                    this.$emit('input', inputValue);
-                    this.$emit('update:domain', '');
-                    this.domain = '';
-                }
-            },
-            handleBlur() {
-                if (this.domain) {
-                    // instant resolve without throttle
-                    this.resolveDomain(this.domain);
-                }
-            },
-            resolveDomain(value, {throttle} = {}) {
-                this.isResolving += 1;
-                this.$emit('update:resolving', !!this.isResolving);
-                return this.mnsResolveDomain(value, {throttle})
-                    .then((domainData) => {
-                        if(this.valueType === 'address' && isValidAddress(domainData.address) && checkDomainSignature(domainData)){
-                            this.$emit('input', domainData.address);
-                        } else if(this.valueType === 'publicKey' && isValidPublic(domainData.publickey) && checkDomainSignature(domainData)){
-                            this.$emit('input', domainData.publickey);
-                        }
-                        this.isResolving -= 1;
-                        this.$emit('update:resolving', !!this.isResolving);
-                    })
-                    .catch(() => {
-                        this.isResolving -= 1;
-                        this.$emit('update:resolving', !!this.isResolving);
-                    });
+            inputChange(inputValue) {
+                console.log(inputValue)
+                this.$emit('input', inputValue.public_key);
+                this.$emit('update:domain', '');
+                this.domain = '';
             },
         },
     };
