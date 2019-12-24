@@ -97,6 +97,10 @@ export default {
             'balance',
             'auth',
         ],
+        mode: 'hash'
+    },
+    route: {
+        mode: 'hash'
     },
     plugins: [
         { src: '~/plugins/persistedState.js', ssr: false },
@@ -201,5 +205,6 @@ export default {
             'noah-js-sdk',
             'noah-js-org',
         ],
+        publicPath:  '/nuxt/'
     },
 };

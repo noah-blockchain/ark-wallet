@@ -4,7 +4,7 @@
             <div class="header__container u-container u-container--large">
                 <nuxt-link class="header__logo no-link" :to="preferredPath('index')">
                     <img class="header__logo-image" src="/img/noah-logo-circle.svg" alt="Noah" width="42" height="42">
-                    <div class="header__logo-text">{{ $store.state.sectionName || `Ark Web wallet` }}</div>
+                    <div class="header__logo-text">{{ $store.state.sectionName || `Noah tools` }}</div>
                 </nuxt-link>
 
                 <div class="header__controls">

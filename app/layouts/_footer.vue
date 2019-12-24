@@ -24,7 +24,7 @@
             {
                 slug: 'console',
                 title: {
-                    en: 'Ark wallet ',
+                    en: 'Noah tools ',
                     jp: "ARKウォレット"
                 },
                 url: 'http://ark-wallet.testnet.noah-blockchain.com/',
