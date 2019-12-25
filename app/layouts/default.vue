@@ -121,7 +121,7 @@
                                     {{ $td('API', 'common.page-api') }}
                                 </a>
                             </a>
-                            <a  href="http://explorer.testnet.noah-blockchain.com" target="_blank" class="menu__item u-cell">
+                            <a  :href="explorer_host" target="_blank" class="menu__item u-cell">
                                 <a class="menu__link link--hover" :to="preferredPath('masternode')"
                                            @click.native="linkClick">
                                     <img class="menu__icon" src="/img/explorer.svg" alt="" role="presentation">
@@ -169,7 +169,8 @@
             return {
                 isMenuActive: false,
                 isDesktop: isDesktop(),
-                shortAddress
+                shortAddress,
+                explorer_host:   process.env.APP_EXPLORER_HOST
             };
         },
         computed: {

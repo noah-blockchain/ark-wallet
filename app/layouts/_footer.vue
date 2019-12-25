@@ -13,21 +13,21 @@
                 },
                 url: 'https://noahcoin.org/',
             },
-            {
-                slug: 'network',
-                title: {
-                    en: 'Network',
-                    jp: "ネットワーク"
-                },
-                url: 'http://testnet.noah-blockchain.com/',
-            },
+            // {
+            //     slug: 'network',
+            //     title: {
+            //         en: 'Network',
+            //         jp: "ネットワーク"
+            //     },
+            //     url: 'http://testnet.noah-blockchain.com/',
+            // },
             {
                 slug: 'console',
                 title: {
                     en: 'Noah tools ',
                     jp: "ARKウォレット"
                 },
-                url: 'http://ark-wallet.testnet.noah-blockchain.com/',
+                url: 'https://tools.noah-blockchain.com/',
                 urlTestnet: 'http://ark-wallet.testnet.noah-blockchain.com/',
             },
             {
@@ -36,7 +36,7 @@
                     en: 'Explorer',
                     jp: "エクスプローラー"
                 },
-                url: 'http://explorer.testnet.noah-blockchain.com',
+                url: 'https://explorer.mainnet.noah-blockchain.com',
                 urlTestnet: 'http://explorer.testnet.noah-blockchain.com',
             },
             {

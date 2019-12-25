@@ -203,11 +203,11 @@
                 </p>
                 <p>Ticker Symbol Fees:</p>
                 <p>
-                    3 letters — NOAH 1 000 000<br>
-                    4 letters — NOAH 100 000<br>
-                    5 letters — NOAH 10 000<br>
-                    6 letters — NOAH 1 000<br>
-                    7-10 letters — NOAH 100<br>
+                    3 letters — NOAH 250 000 000,00<br>
+                    4 letters — NOAH 25 000 000,00<br>
+                    5 letters — NOAH 2 500 000,00<br>
+                    6 letters — NOAH  250 000,00<br>
+                    7-10 letters — NOAH  25 000,00<br>
                 </p>
             </template>
             <template v-if="$i18n.locale === 'jp'">
@@ -216,11 +216,11 @@
                 </p>
                 <p>ティッカーシンボルの料金：</p>
                 <p>
-                    3文字－1,000,000 NOAH <br>
-                    4文字－100,000 NOAH <br>
-                    5文字－10,000 NOAH <br>
-                    6文字－1000 NOAH <br>
-                    7～10文字－100 NOAH<br>
+                    3文字－250 000 000,00 NOAH <br>
+                    4文字－25 000 000,00 NOAH <br>
+                    5文字－2 500 000,00 NOAH <br>
+                    6文字－250 000,00 NOAH <br>
+                    7～10文字－25 000,00 NOAH<br>
                 </p>
             </template>
         </div>
