@@ -60,7 +60,7 @@
         },
         head() {
             const title = getTitle(null, this.$i18n.locale);
-            const description = this.$td(`Noah Console is by far the most advanced part of our project that lets you manage all your activities on our ${this.isTestnet ? 'test ' : ''}network.`, this.isTestnet ? 'index.seo-description-testnet' : 'index.seo-description');
+            const description = this.$td(`Noah Tools is by far the most advanced part of our project that lets you manage all your activities on our ${this.isTestnet ? 'test ' : ''}network.`, this.isTestnet ? 'index.seo-description-testnet' : 'index.seo-description');
             const localeSuffix = this.$i18n.locale === 'en' ? '' : '-' + this.$i18n.locale;
 
             return {

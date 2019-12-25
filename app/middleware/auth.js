@@ -2,9 +2,7 @@ export default function({app, store, route, redirect, error}) {
     if (process.server) {
         return;
     }
-    console.log('CHECK AUTH');
-    console.log('-- route', route);
-    console.log('-- path', route.path);
+
 
     const urlRequiresAuth = [
         /^(\/ru)?\/account(\/|$)/,
@@ -48,6 +46,5 @@ export default function({app, store, route, redirect, error}) {
     //     return error({statusCode: 404, message: 'Page not found'});
     // }
 
-    console.log('-- not restricted');
     return Promise.resolve();
 }

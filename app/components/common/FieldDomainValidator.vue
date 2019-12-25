@@ -72,7 +72,6 @@
         },
         methods: {
             inputChange(inputValue) {
-                console.log(inputValue)
                 this.$emit('input', inputValue.public_key);
                 this.$emit('update:domain', '');
                 this.domain = '';
