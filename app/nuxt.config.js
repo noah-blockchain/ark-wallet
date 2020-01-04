@@ -108,6 +108,8 @@ export default {
         { src: '~/plugins/click-blur.js', ssr: false },
         { src: '~/plugins/classlist-svg-polyfill.js', ssr: false },
         { src: '~/plugins/v-select.js', ssr: false },
+        { src: '~/plugins/v-tooltip.js', ssr: false },
+
     ],
     env: envConfigParsed,
     modules: [

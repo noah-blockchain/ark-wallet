@@ -10,9 +10,19 @@
             :options="$store.state.validatorList">
             <template v-slot:option="option">
                 <div class="select-validator">
-                    <span class="public-name">{{ option.meta.name }}</span>
-                    <span class="public-select">{{ shrinkString(option.public_key, 42) }}</span>
-                    <span class="public-select-desc">Part: {{option.part}} Uptime: {{option.uptime}}</span>
+                    <div class="validator-desc">
+                        <span class="public-name">{{ option.meta.name }}</span>
+                        <span class="public-select">{{ shrinkString(option.public_key, 40) }}</span>
+                        <span class="public-select-desc">
+                        Fee for Delegation: {{Number(option.commission).toFixed(2)}}
+                        | Share of Stake: {{Number(option.stake).toFixed(2)}}
+                    </span>
+                    </div>
+                    <div class="validator-link">
+                        <a :href="EXPLORER_HOST +  '/validators/' + option.public_key" v-tooltip.top-center="'go to explorer'">
+                            <img  src="/img/information.svg">
+                        </a>
+                    </div>
                 </div>
             </template>
         </v-select>
@@ -23,6 +33,7 @@
     import {ResolveDomain, isDomain, checkDomainSignature} from '~/api/mns';
     import FieldQrSelect from '~/components/common/FieldQrSelect';
     import shrinkString from "../../utils/shrinkString";
+    import {EXPLORER_HOST} from "../../assets/variables";
 
     export default {
         ideFix: true,
@@ -61,7 +72,7 @@
         data() {
             return {
                 shrinkString,
-
+                EXPLORER_HOST,
                 domain: this.value,
                 isResolving: 0,
                 mnsResolveDomain: ResolveDomain(),
