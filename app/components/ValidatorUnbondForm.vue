@@ -256,6 +256,7 @@
         <div class="u-grid u-grid--small u-grid--vertical-margin--small">
             <div class="u-cell u-cell--xlarge--1-2">
                 <FieldDomain
+                    :max="100"
                     v-model.trim="form.publicKey"
                     :$value="$v.form.publicKey"
                     valueType="publicKey"

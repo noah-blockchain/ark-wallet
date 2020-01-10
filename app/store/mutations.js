@@ -58,15 +58,8 @@ export default {
     },
     SET_VALIDATOR_LIST(state, validatorList) {
         console.log(validatorList, 'validatorList')
-        const validators = []
-        validatorList.forEach((val) => {
-            console.log("COMMISIONS", val.commission)
-            if(val.commission < 80.01) {
-                validators.push(val)
-            }
-        })
-        console.log(validators)
-        state.validatorList = validators;
+
+        state.validatorList = validatorList;
     },
 };
 

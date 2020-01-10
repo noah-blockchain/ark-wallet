@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="$store.state.validatorList !== undefined">
         <v-select
             placeholder="Select validator"
             :clearable="false"
@@ -7,7 +7,7 @@
             label="public_key"
             :value="shrinkString(value, 38)"
             class="form-field__input" type="text" autocapitalize="off" spellcheck="false"
-            :options="$store.state.validatorList">
+            :options="filter($store.state.validatorList)">
             <template v-slot:option="option">
                 <div class="select-validator">
                     <div class="validator-desc">
@@ -63,6 +63,10 @@
                 type: String,
                 required: true,
             },
+            max: {
+                type: Number,
+                default: 80.1
+            },
             // self
             help: {
                 type: String,
@@ -81,7 +85,24 @@
         mounted() {
             this.$store.dispatch('FETCH_STAKE_LIST');
         },
+        computed: {
+        },
         methods: {
+            filter(validators) {
+                try {
+                    if(this.max === 100) return  validators;
+                    const result = []
+                    validators.forEach((val) => {
+                        if (val.commission < this.max) {
+                            result.push(val)
+                        }
+                    });
+                    console.log(result, 'RESULT')
+                    return result
+                } catch (e) {
+                    return []
+                }
+            },
             inputChange(inputValue) {
                 console.log(inputValue)
                 this.$emit('input', inputValue.public_key);
