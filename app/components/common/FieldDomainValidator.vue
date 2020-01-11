@@ -12,15 +12,21 @@
                 <div class="select-validator">
                     <div class="validator-desc">
                         <span class="public-name">{{ option.meta.name }}</span>
-                        <span class="public-select">{{ shrinkString(option.public_key, 40) }}</span>
+                        <span class="public-select">{{ shrinkString(option.public_key, 36) }}</span>
                         <span class="public-select-desc">
                         Fee for Delegation: {{Number(option.commission).toFixed(2)}}
-                        | Share of Stake: {{Number(option.stake).toFixed(2)}}
                     </span>
+                        <span class="public-select-desc">
+                             Share of Stake: {{Number(option.stake).toFixed(2)}}
+                        </span>
+                        <span class="public-select-desc">
+                             Profitability: 20%
+                        </span>
                     </div>
                     <div class="validator-link">
-                        <a :href="EXPLORER_HOST +  '/validators/' + option.public_key" v-tooltip.top-center="'go to explorer'">
-                            <img  src="/img/information.svg">
+                        <a :href="EXPLORER_HOST +  '/validators/' + option.public_key"
+                           v-tooltip.top-center="'go to explorer'">
+                            <img src="/img/information.svg">
                         </a>
                     </div>
                 </div>
@@ -85,12 +91,11 @@
         mounted() {
             this.$store.dispatch('FETCH_STAKE_LIST');
         },
-        computed: {
-        },
+        computed: {},
         methods: {
             filter(validators) {
                 try {
-                    if(this.max === 100) return  validators;
+                    if (this.max === 100) return validators;
                     const result = []
                     validators.forEach((val) => {
                         if (val.commission < this.max) {
