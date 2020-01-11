@@ -1,4 +1,3 @@
-
 <template>
     <div class="table-wrap">
         <div class="panel__content panel__section u-text-center" v-if="isLoading">
@@ -12,19 +11,32 @@
                 <th>
                     <button class="table__sort-button u-semantic-button link--hover" @click="toggleSort('hash')">
                         <span class="table__sort-button-text">{{ hashName }}</span>
-                        <img class="table__sort-button-icon" src="/img/icon-sort.svg" alt="Sort" :class="getSortClass('hash')">
+                        <img class="table__sort-button-icon" src="/img/icon-sort.svg" alt="Sort"
+                             :class="getSortClass('hash')">
                     </button>
                 </th>
                 <th class="u-hidden-xlarge-down">
                     <button class="table__sort-button u-semantic-button link--hover" @click="toggleSort('coin')">
                         <span class="table__sort-button-text">Coin</span>
-                        <img class="table__sort-button-icon" src="/img/icon-sort.svg" alt="Sort" :class="getSortClass('coin')">
+                        <img class="table__sort-button-icon" src="/img/icon-sort.svg" alt="Sort"
+                             :class="getSortClass('coin')">
                     </button>
                 </th>
                 <th>
                     <button class="table__sort-button u-semantic-button link--hover" @click="toggleSort('value', true)">
                         <span class="table__sort-button-text">Amount</span>
-                        <img class="table__sort-button-icon" src="/img/icon-sort.svg" alt="Sort" :class="getSortClass('value')">
+                        <img class="table__sort-button-icon" src="/img/icon-sort.svg" alt="Sort"
+                             :class="getSortClass('value')">
+                    </button>
+                </th>
+                <th class="u-hidden-xlarge-down">
+                    <button class="table__sort-button u-semantic-button link--hover">
+                        <span class="table__sort-button-text">Profitability</span>
+                    </button>
+                </th>
+                <th class="u-hidden-xlarge-down">
+                    <button class="table__sort-button u-semantic-button link--hover">
+                        <span class="table__sort-button-text">   Profit received</span>
                     </button>
                 </th>
             </tr>
@@ -32,7 +44,8 @@
             <tbody>
             <tr v-for="stakeItem in stakeListSorted" :key="getLabel(stakeItem) + stakeItem.coin">
                 <td>
-                    <div class="table__cell-title" v-if="getValidatorName(stakeItem)">{{ getValidatorName(stakeItem) }}</div>
+                    <div class="table__cell-title" v-if="getValidatorName(stakeItem)">{{ getValidatorName(stakeItem) }}
+                    </div>
                     <TableLink
                         class="table__cell-sub"
                         :link-text="getLabel(stakeItem)"
@@ -40,17 +53,21 @@
                         :should-not-shorten="!shouldShortenLabel"
                     />
                 </td>
-                <td class="u-hidden-xlarge-down">{{ stakeItem.coin }}</td>
+                <td class="u-hidden-xlarge-down">{{ stakeItem.coin}}</td>
                 <td>
                     <span class="u-hidden-xlarge-up">{{ stakeItem.coin }}</span>
 
                     <span :title="prettyPrecise(stakeItem.value)">{{ stakeItem.value | pretty }}</span>
-
+                    <span class="u-hidden-xlarge-up"><br/>Profitability: 20% </span>
+                    <span class="u-hidden-xlarge-up"><br/>Profit received {{Number(stakeItem.profit_received).toFixed(2)}}</span>
                 </td>
+                <td class="u-hidden-xlarge-down">20%</td>
+                <td class="u-hidden-xlarge-down">{{Number(stakeItem.profit_received).toFixed(2)}}</td>
             </tr>
             </tbody>
         </table>
         <div class="panel__content panel__section u-text-center" v-else>No Stakes</div>
+
     </div>
 </template>
 
@@ -58,6 +75,7 @@
     import debounce from 'lodash-es/debounce';
     import {pretty, prettyPrecise, getExplorerValidatorUrl, getExplorerAddressUrl} from '~/assets/utils';
     import TableLink from "~/components/common/TableLink";
+    import shrinkString from "../utils/shrinkString";
 
     let resizeHandler;
 
@@ -87,6 +105,7 @@
         data() {
             return {
                 shouldShortenLabel: this.getShouldShortenLabel(),
+                shrinkString,
                 sort: {
                     // 0 - no sort, -1 - ascending, 1 - descending
                     hash: 0,
@@ -134,10 +153,10 @@
             },
             getLabel(stakeItem) {
                 if (this.stakeItemType === 'validator') {
-                    return stakeItem.pub_key.toString();
+                    return shrinkString(stakeItem.pub_key.toString(), 16);
                 }
                 if (this.stakeItemType === 'delegator') {
-                    return stakeItem.address.toString();
+                    return shrinkString(stakeItem.address.toString(), 16);
                 }
             },
             getUrl(stakeItem) {
@@ -228,7 +247,7 @@
      * @param {Function} sortFn
      */
     function makeOrderedSortFn(order, sortFn) {
-        return function(a, b) {
+        return function (a, b) {
             return order * sortFn(a, b);
         };
     }
@@ -239,7 +258,7 @@
      * @return {Function} sort function
      */
     function makeSortQueue(fnArray) {
-        return function(a, b) {
+        return function (a, b) {
             return fnArray.reduce((result, sortFnItem) => {
                 // if result === 0 => apply sortFnItem
                 return result || sortFnItem(a, b);
