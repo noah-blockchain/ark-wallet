@@ -98,11 +98,10 @@
                     if (this.max === 100) return validators;
                     const result = []
                     validators.forEach((val) => {
-                        if (val.commission < this.max) {
+                        if (val.commission < this.max && val.status === 2) {
                             result.push(val)
                         }
                     });
-                    console.log(result, 'RESULT')
                     return result
                 } catch (e) {
                     return []
