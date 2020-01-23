@@ -29,16 +29,16 @@
                              :class="getSortClass('value')">
                     </button>
                 </th>
-                <th class="u-hidden-xlarge-down">
-                    <button class="table__sort-button u-semantic-button link--hover">
-                        <span class="table__sort-button-text">Profitability</span>
-                    </button>
-                </th>
-                <th class="u-hidden-xlarge-down">
-                    <button class="table__sort-button u-semantic-button link--hover">
-                        <span class="table__sort-button-text">   Profit received</span>
-                    </button>
-                </th>
+<!--                <th class="u-hidden-xlarge-down">-->
+<!--                    <button class="table__sort-button u-semantic-button link&#45;&#45;hover">-->
+<!--                        <span class="table__sort-button-text">Profitability</span>-->
+<!--                    </button>-->
+<!--                </th>-->
+<!--                <th class="u-hidden-xlarge-down">-->
+<!--                    <button class="table__sort-button u-semantic-button link&#45;&#45;hover">-->
+<!--                        <span class="table__sort-button-text">   Profit received</span>-->
+<!--                    </button>-->
+<!--                </th>-->
             </tr>
             </thead>
             <tbody>
@@ -58,11 +58,11 @@
                     <span class="u-hidden-xlarge-up">{{ stakeItem.coin }}</span>
 
                     <span :title="prettyPrecise(stakeItem.value)">{{ stakeItem.value | pretty }}</span>
-                    <span class="u-hidden-xlarge-up"><br/>Profitability: 20% </span>
-                    <span class="u-hidden-xlarge-up"><br/>Profit received {{Number(stakeItem.profit_received).toFixed(2)}}</span>
+<!--                    <span class="u-hidden-xlarge-up"><br/>Profitability: 20% </span>-->
+<!--                    <span class="u-hidden-xlarge-up"><br/>Profit received {{Number(stakeItem.profit_received).toFixed(2)}}</span>-->
                 </td>
-                <td class="u-hidden-xlarge-down">20%</td>
-                <td class="u-hidden-xlarge-down">{{Number(stakeItem.profit_received).toFixed(2)}}</td>
+<!--                <td class="u-hidden-xlarge-down">20%</td>-->
+<!--                <td class="u-hidden-xlarge-down">{{Number(stakeItem.profit_received).toFixed(2)}}</td>-->
             </tr>
             </tbody>
         </table>
