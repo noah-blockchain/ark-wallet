@@ -25,6 +25,7 @@ export default {
                 return stakeList;
             });
     },
+
     FETCH_VALIDATOR_LIST({ commit }) {
         return getValidatorList()
             .then((validatorList) => {

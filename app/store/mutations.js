@@ -2,6 +2,9 @@ import Vue from 'vue';
 import {setAuthToken, resetAuthToken} from "~/api/accounts";
 
 export default {
+    SET_HELPER_STATE: (state, help) => {
+        state.helper =  help
+    },
     SET_SECTION_NAME: (state, sectionName) => {
         state.sectionName = sectionName;
     },

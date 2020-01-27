@@ -1,6 +1,7 @@
 export default function() {
     return {
         sectionName: '',
+        helper: 'login-first',
         auth: {
             /** @type string|null - mnemonic */
             advanced: null,

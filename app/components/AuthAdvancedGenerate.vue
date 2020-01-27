@@ -2,11 +2,15 @@
     <div class="panel__section">
         <div class="u-grid u-grid--small u-grid--vertical-margin--small">
             <div class="u-cell" v-if="!mnemonic && keystore_step  === 0">
-                <button class="button button--main button--full" data-test-id="authAdvancedRegisterGenerateButton" @click="generate">
+                <button
+                    v-bind:class="{'active-help': $store.state.helper === 'login-generate'}"
+                    class="button button--main button--full" data-test-id="authAdvancedRegisterGenerateButton" @click="generate">
                     {{ $td('Click To Generate Seed&nbsp;Phrase', 'index.auth-sign-up-seed-generate') }}
                 </button>
                 <div class="divider"></div>
-                <button class="button button--main button--full" data-test-id="authAdvancedRegisterGenerateButton" @click="keystore_step = 1">
+                <button
+                    v-bind:class="{'active-help': $store.state.helper === 'login-generate-file'}"
+                    class="button button--main button--full" data-test-id="authAdvancedRegisterGenerateButton" @click="keystore_step = 1">
                     {{ $td('Click To Generate Keystore file', 'index.auth-sign-up-keystore-generate') }}
                 </button>
             </div>

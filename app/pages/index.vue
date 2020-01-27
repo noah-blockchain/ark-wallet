@@ -13,15 +13,12 @@
                                     {{ $td('SIGN IN WITH SEED PHRASE', 'index.auth-sign-in-title') }}
                                 </h1>
                             </div>
-                            <div class="help-background"></div>
-
                             <AuthAdvancedForm :isAuthAddress="true"/>
-
                         </div>
                     </div>
 
                     <div class="u-cell u-cell--medium--1-2">
-                        <div class="active-help">
+                        <div v-bind:class="{'active-help': $store.state.helper === 'login-first'}">
                             <div class="panel">
                                 <div class="panel__header">
                                     <h1 class="panel__header-title">
