@@ -1,6 +1,6 @@
 <template>
     <main>
-        <LoginPageHelper/>
+<!--        <LoginPageHelper/>-->
         <div class="auth u-section" data-test-id="authSection">
             <div class="u-container u-container--medium">
                 <div class="u-grid u-grid--vertical-margin">
