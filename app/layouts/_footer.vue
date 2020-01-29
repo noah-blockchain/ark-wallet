@@ -11,7 +11,7 @@
                     en: 'Intro',
                     jp: "プロジェクト情報"
                 },
-                url: 'https://noahcoin.org/',
+                url: 'https://noahcity.org/',
             },
             // {
             //     slug: 'network',
