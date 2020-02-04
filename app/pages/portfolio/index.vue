@@ -10,7 +10,7 @@
                         <a class="link--default u-icon-text"
                            style="color: #fff"
                            :href="addressUrl" target="_blank" data-test-id="walletAddressLink">{{isDesktop ? address :
-                            shortAddress(address) }}</a>
+                            shortAddress(address) }}</a>x
                         <ButtonCopyIcon class="white" :copy-text="address"/>
 
                         <button class="u-icon u-icon--qr--right  u-semantic-button link--opacity" style="width: 86px"
