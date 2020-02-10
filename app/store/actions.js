@@ -25,7 +25,6 @@ export default {
                 return stakeList;
             });
     },
-
     FETCH_VALIDATOR_LIST({ commit }) {
         return getValidatorList()
             .then((validatorList) => {
@@ -33,6 +32,8 @@ export default {
                 return validatorList;
             });
     },
+
+
 
     // FETCH_PROFILE_ADDRESS_LIST: ({ commit, getters }) => {
     //     if (getters.isUserWithProfile) {

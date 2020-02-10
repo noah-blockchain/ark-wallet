@@ -64,6 +64,14 @@ export default {
 
         state.validatorList = validatorList;
     },
+    COMPILE_VALIDATOR_LIST(state, validatorList) {
+        state.validatorList = [
+            ...state.validatorList,
+            ...validatorList
+        ]
+        console.log(state.validatorList, "validatorList")
+
+    }
 };
 
 function LOGOUT(state) {

@@ -232,8 +232,8 @@ function makeFormData(data) {
 /**
  * @return {Promise<Array<Validator>>}
  */
-export function getValidatorList() {
-    return explorer.get(`validators`)
+export function getValidatorList(page =1) {
+    return explorer.get(`validators?page=${page}`)
         .then((response) => response.data.data.sort((a, b) => {
             // Sort by stake descending
             return Number(b.stake) >= Number(a.stake);
