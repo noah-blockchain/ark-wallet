@@ -70,7 +70,7 @@
                     {{ $td('Unbond', 'delegation.unbond-title') }}
                 </h1>
                 <p class="panel__header-description">
-                    {{ $td('In case you don’t want the validator to handle your holdings anymore, all you need to do is submit the request for unbonding. The process will be finalized within 30 days after the request has been sent.', 'delegation.unbond-description') }}
+                    {{ $td('In case you don’t want the validator to handle your holdings anymore, all you need to do is submit the request for unbonding. The process will be finalized within approximately 30 days (518 400 blocks) after the request has been sent.', 'delegation.unbond-description') }}
                 </p>
             </div>
             <ValidatorUnbondForm/>
