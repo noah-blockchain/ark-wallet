@@ -17,7 +17,7 @@ export default {
         "page-delegation": "デレゲート",
         "page-masternode": "マスターノード",
         "page-coiner": "オリジナルコインを発行",
-        "page-buy": "コインをコインを買う",
+        "page-buy": "コインを買う",
         "page-account": "アカウント",
 
         "page-api": "API",
