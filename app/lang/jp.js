@@ -104,7 +104,7 @@ export default {
         "delegate-title": "デレゲート",
         "delegate-description": "バリデーターにデレゲートすることにより、参加の条件に応じて報酬を得ることが可能です",
         "unbond-title" : "解除",
-        "unbond-description": "バリデーターにあなたの持ち分をプロセスして欲しくない場合は、解除手続きをすることが可能です。解除プロセスはリクエストが送られてから、30日以内に完了します",
+        "unbond-description": "バリデーターにあなたの持ち分をプロセスして欲しくない場合は、解除手続きをすることが可能です。解除プロセスはリクエストが送られてから、90日以内に完了します",
         "reinvest-generate-title": "Delegation Transactions",
         "reinvest-generate-description": "In order to enable automatic delegation, you will first need to generate a batch of transactions. You may do it either on-line or locally (we recommend that you use the second option as it is more secure). If you do it off-line, download the resulting file and proceed to the next step. If you do it on-line, generated transactions will be sent to auto-delegation server automatically.",
 
