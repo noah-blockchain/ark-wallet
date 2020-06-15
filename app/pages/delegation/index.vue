@@ -229,9 +229,6 @@
         font-size: 22px;
 
     }
-    .panel-warning select {
-        background: #000 !important;
-    }
     .panel-warning option {
         color: #000000;
     }
