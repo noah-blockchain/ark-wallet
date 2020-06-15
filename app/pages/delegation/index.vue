@@ -119,7 +119,7 @@
     </section>
 </template>
 
-<style lang="scss">
+<style lang="less">
     .panel-warning {
         background: #000;
         color: #ffffff;
