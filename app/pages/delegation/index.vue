@@ -5,11 +5,13 @@
     import ValidatorUnbondForm from '~/components/ValidatorUnbondForm';
     import ValidatorReinvestForm from '~/components/ValidatorReinvestForm';
     import ValidatorReinvestPostForm from '~/components/ValidatorReinvestStartForm';
+    import Promo from "../../components/Promo";
 
     let stakeInterval;
 
     export default {
         components: {
+            Promo,
             StakeListTable,
             ValidatorDelegateForm,
             ValidatorUnbondForm,
@@ -53,6 +55,14 @@
 
 <template>
     <section class="u-section u-container">
+        <div class="panel panel-warning" style="overflow: unset">
+            <div class="panel__header">
+                <h1 class="panel__header-title">
+                    {{ $td('Get more benefits from holding cryptocurrency', 'promo.title') }}
+                </h1>
+                <Promo/>
+            </div>
+        </div>
         <div class="panel" style="overflow: unset">
             <div class="panel__header">
                 <h1 class="panel__header-title">
@@ -108,3 +118,60 @@
 
     </section>
 </template>
+
+<style lang="scss">
+    .panel-warning {
+        background: #000;
+        color: #ffffff;
+        .panel__header-title {
+            color: #ffbd00;
+        }
+    }
+    .invest-now {
+        width: 320px; height: 54px; border-radius: 27px; display: flex; align-items: center;
+        justify-content: center; background:#ffbd00; color: #000; font-weight: bold; margin-top: 32px;
+        cursor: pointer;
+    }
+    .promo-footer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    .calc {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 8px;
+    }
+    .select-title {
+        margin-right: 24px;
+        input {
+            display: flex;
+            border: none;
+            background: #000000;
+            height: 36px;
+            padding-right: 6px;
+            border-bottom: 1px solid #eeeeee;
+            color: #ffffff;
+        }
+
+        .form-field__input {
+            border-bottom: 1px solid #eeeeee;
+            margin-top: 12px;
+        }
+    }
+    .select-t {
+        display: block;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .bold-yellow {
+        color: #ffbd00;
+        font-weight: bold;
+        font-size: 22px;
+
+    }
+</style>
