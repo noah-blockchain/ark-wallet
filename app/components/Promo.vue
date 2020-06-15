@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="promo-footer">
-            <a href="https://www.btcnext.io/ko/qdao-defi-faq" class="invest-now">{{ $td('Invest now',
+            <a href="https://www.btcnext.io/qdao-defi-faq" class="invest-now">{{ $td('Invest now',
                 'promo.invest_now') }}</a>
         </div>
     </div>
