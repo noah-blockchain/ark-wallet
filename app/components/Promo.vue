@@ -12,8 +12,6 @@
                 <div class="select-title">
                     <span class="select-t">{{ $td('Select the currency', 'promo.select_currency') }}</span>
                     <select v-model="currency" class="form-field__input form-field__input--select is-not-empty">
-                        <option value="">
-                        </option>
                         <option :value="currency" v-for="currency in currencies">
                             {{currency}}
                         </option>
@@ -25,7 +23,7 @@
                 </div>
                 <div class="select-title">
                     <span class="select-t bold">{{ $td('Your income is', 'promo.you_income') }}</span>
-                    <div class="bold-yellow">{{Number((amount * 0.08) / (365 - _cof)).toFixed(6) }} {{currency}} {{ $td('per day', 'promo.per_day') }}
+                    <div class="bold-yellow">{{ Number((amount * 0.082) / (365 - _cof)).toFixed(6) }} {{currency}} {{ $td('per day', 'promo.per_day') }}
                     </div>
                 </div>
             </div>
@@ -41,7 +39,7 @@
     export default {
         name: "Promo",
         data: () => ({
-            currency: "",
+            currency: "BTC",
             amount: 10000,
             currencies: ['XRP', 'ETH', 'BTC']
         }),
