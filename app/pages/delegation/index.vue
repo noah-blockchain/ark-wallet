@@ -119,3 +119,114 @@
     </section>
 </template>
 
+<style>
+    .panel-warning {
+        background: #000;
+        color: #ffffff;
+    }
+
+    .panel-warning .panel__header-title {
+        color: #ffbd00;
+    }
+    .invest-now {
+        width: 320px; height: 54px; border-radius: 27px; display: flex; align-items: center;
+        justify-content: center; background:#ffbd00; color: #000; font-weight: bold; margin-top: 32px;
+        cursor: pointer;
+    }
+    .promo-footer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    .calc {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 8px;
+    }
+    .select-title {
+        margin-right: 24px;
+    }
+    .select-title input {
+        display: flex;
+        border: none;
+        background: #000000;
+        height: 36px;
+        padding-right: 6px;
+        border-bottom: 1px solid #eeeeee;
+        color: #ffffff;
+    }
+
+    .select-title .form-field__input {
+        border-bottom: 1px solid #eeeeee;
+        margin-top: 12px;
+    }
+    .select-t {
+        display: block;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .bold-yellow {
+        color: #ffbd00;
+        font-weight: bold;
+        font-size: 22px;
+
+    }
+    .panel-warning {
+         background: #000;
+         color: #ffffff;
+    }
+    .panel-warning .panel__header-title {
+        color: #ffbd00;
+    }
+    .invest-now {
+        width: 320px; height: 54px; border-radius: 27px; display: flex; align-items: center;
+        justify-content: center; background:#ffbd00; color: #000; font-weight: bold; margin-top: 32px;
+        cursor: pointer;
+    }
+    .promo-footer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    .calc {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 8px;
+    }
+    .select-title {
+        margin-right: 24px;
+    }
+    .select-title input {
+        display: flex;
+        border: none;
+        background: #000000;
+        height: 36px;
+        padding-right: 6px;
+        border-bottom: 1px solid #eeeeee;
+        color: #ffffff;
+    }
+
+    .select-title .form-field__input {
+        border-bottom: 1px solid #eeeeee;
+        margin-top: 12px;
+    }
+    .select-t {
+        display: block;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .bold-yellow {
+        color: #ffbd00;
+        font-weight: bold;
+        font-size: 22px;
+
+    }
+</style>
